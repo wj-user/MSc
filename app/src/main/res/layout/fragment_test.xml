@@ -5,11 +5,23 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/fragment_test_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="title"
+        android:textSize="35dp"
+        android:visibility="visible" />
+
+    <TextView
         android:id="@+id/fragment_test_tv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
         android:gravity="center"
-        android:text="1111 "
-        android:textSize="10dp" />
+        android:text="撒大口径你就爱上年度纳税可能都是那就看电脑卡死你看的那技术哪家快递那会计室内空间的哪款是你的喀纳斯的男生就
+hsabdjnaskdnklasnkldnmlasdnknaskdnasndlknlksandlknlasnldnkasnldnknaslkndlasnldnlkasnkdnksal"
+        android:textSize="18dp"
+        android:typeface="serif" />
 
 </LinearLayout>
