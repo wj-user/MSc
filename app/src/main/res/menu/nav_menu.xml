@@ -3,27 +3,27 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_Admission"
-            android:icon="@drawable/nav_call"
+            android:icon="@drawable/adm"
             android:title="Admission" />
         <item
             android:id="@+id/nav_Curriculum"
-            android:icon="@drawable/nav_friends"
+            android:icon="@drawable/curri"
             android:title="Curriculum" />
         <item
             android:id="@+id/nav_Gratuate"
-            android:icon="@drawable/nav_location"
+            android:icon="@drawable/nav_friends"
             android:title="Gratuate and Alumni" />
         <item
             android:id="@+id/nav_News"
-            android:icon="@drawable/nav_mail"
-            android:title="Student Resource" />
+            android:icon="@drawable/event"
+            android:title="News" />
         <item
             android:id="@+id/nav_Resource"
-            android:icon="@drawable/nav_mail"
+            android:icon="@drawable/resource"
             android:title="Student Resource" />
         <item
             android:id="@+id/nav_About"
-            android:icon="@drawable/nav_task"
+            android:icon="@drawable/about"
             android:title="About" />
     </group>
 </menu>

@@ -19,6 +19,8 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+
 import static com.example.a69477.myapplication.R.id.nav_Admission;
 
 
@@ -31,8 +33,8 @@ public class MainActivity extends AppCompatActivity  {
     // private CircleIndicator = mCircleindicator;
     private void initView() {
         mPcitureviewpager = (ViewPager) findViewById(R.id.picture);
-        mImage[0] = R.drawable.school;
-        mImage[1] = R.drawable.slider;
+        mImage[0] = R.drawable.hku1;
+        mImage[1] = R.drawable.slide1;
     }
 
 
@@ -45,6 +47,15 @@ public class MainActivity extends AppCompatActivity  {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);//标题
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        //---------------------------------------------------------------------
+        ImageView img1 =(ImageView) findViewById(R.id.schedule);
+        Glide.with(this).load(R.drawable.schedule).into(img1);
+        ImageView img2 =(ImageView) findViewById(R.id.fee);
+        Glide.with(this).load(R.drawable.fees).into(img2);
+        ImageView img3 =(ImageView) findViewById(R.id.ddl);
+        Glide.with(this).load(R.drawable.appddl).into(img3);
+        ImageView img4 =(ImageView) findViewById(R.id.Overview);
+        Glide.with(this).load(R.drawable.cover).into(img4);
         //---------------------------------------------------------------------
         NavigationView navView = (NavigationView) findViewById(R.id.nav_view);
         ActionBar actionBar = getSupportActionBar();
@@ -98,8 +109,8 @@ public class MainActivity extends AppCompatActivity  {
             case R.id.backup:
                 Toast.makeText(this, "You clicked Backup", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.delete:
-                Toast.makeText(this, "You clicked Delete", Toast.LENGTH_SHORT).show();
+            case R.id.mail_us:
+                Toast.makeText(this, "You clicked Mail us", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.settings:
                 Toast.makeText(this, "You clicked Settings", Toast.LENGTH_SHORT).show();

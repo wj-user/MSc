@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Hku cs"
+        android:text="HKU CS"
         android:textColor="#FFF"
         android:textSize="14sp" />
 
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/username"
-        android:text="hkucs@gmail.com"
+        android:text="msccs@cs.hku.hk"
         android:textColor="#FFF"
         android:textSize="14sp" />
 

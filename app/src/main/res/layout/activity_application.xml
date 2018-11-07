@@ -21,7 +21,8 @@
             android:background="#3b4aac"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:navigationIcon="@drawable/ic_done"/>
+            app:navigationIcon="@drawable/ic_back"
+            />
 
         <com.example.a69477.myapplication.WrapContentHeightViewPager
             android:id="@+id/vp"
