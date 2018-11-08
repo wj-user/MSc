@@ -26,7 +26,7 @@ public class application extends AppCompatActivity {
     private ViewPagerAdapter viewPagerAdapter;
     private ViewPager viewPager;
     private MenuItem menuItem;
-
+    private Menu menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +34,17 @@ public class application extends AppCompatActivity {
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+
+        //menu=findViewById(R.id.bottomMenu);
+        menu=bottomNavigationView.getMenu();
+        menu.getItem(0).setTitle("Admission Requirement");
+        menu.getItem(1).setTitle("Application Procedure");
+        menu.getItem(2).setTitle("Composition Fee");
+        menu.getItem(3).setTitle("Words from Students and Graduates");
+        menu.getItem(4).setTitle("Information sessions");
+        //menu.getItem(5).setTitle("FAQ");
+
         viewPager = (ViewPager) findViewById(R.id.vp);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
