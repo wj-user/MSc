@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -69,6 +70,7 @@ public class TestFragment extends Fragment {
                 tv.setText(body);
                 tv.setTextSize(18);
                 tv.setTypeface(Typeface.SERIF);
+
             }
             else {
                 tv_title.setVisibility(View.GONE);

@@ -10,6 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -49,13 +50,33 @@ public class MainActivity extends AppCompatActivity  {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         //---------------------------------------------------------------------
         ImageView img1 =(ImageView) findViewById(R.id.schedule);
-        Glide.with(this).load(R.drawable.schedule).into(img1);
+        Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/ProgrammeSchedule.jpg").into(img1);
         ImageView img2 =(ImageView) findViewById(R.id.fee);
-        Glide.with(this).load(R.drawable.fees).into(img2);
+        Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/ProgrammeFees.jpg").into(img2);
         ImageView img3 =(ImageView) findViewById(R.id.ddl);
-        Glide.with(this).load(R.drawable.appddl).into(img3);
+        Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/ApplicationDeadlines.jpg").into(img3);
         ImageView img4 =(ImageView) findViewById(R.id.Overview);
         Glide.with(this).load(R.drawable.cover).into(img4);
+        //---------------------------------------------------------------------
+        CardView my_program_sch = (CardView) findViewById(R.id.psCard);
+        my_program_sch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MainActivity.this,ProSchedule.class);
+                startActivity(intent1);
+            }
+        });
+
+        CardView my_composition_fee = (CardView) findViewById(R.id.cfCard);
+        my_composition_fee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(MainActivity.this,CompositionFees.class);
+                startActivity(intent2);
+            }
+        });
+
+
         //---------------------------------------------------------------------
         NavigationView navView = (NavigationView) findViewById(R.id.nav_view);
         ActionBar actionBar = getSupportActionBar();
@@ -107,7 +128,7 @@ public class MainActivity extends AppCompatActivity  {
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 break;
             case R.id.backup:
-                Toast.makeText(this, "You clicked Backup", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "You clicked Phone Call", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.mail_us:
                 Toast.makeText(this, "You clicked Mail us", Toast.LENGTH_SHORT).show();
