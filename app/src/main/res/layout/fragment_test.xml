@@ -8,20 +8,155 @@
         android:id="@+id/fragment_test_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="title"
-        android:textSize="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="Admission Requirements"
+        android:textSize="30dp"
         android:visibility="visible" />
 
+
+   <!--<TextView
+        android:id="@+id/first_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Eligibility"
+        android:textSize="20dp" />
+
     <TextView
-        android:id="@+id/fragment_test_tv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
-        android:text="撒大口径你就爱上年度纳税可能都是那就看电脑卡死你看的那技术哪家快递那会计室内空间的哪款是你的喀纳斯的男生就
-hsabdjnaskdnklasnkldnmlasdnknaskdnasndlknlksandlknlasnldnkasnldnknaslkndlasnldnlkasnkdnksal"
-        android:textSize="18dp"
-        android:typeface="serif" />
+        android:id="@+id/fisrt_title_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="    To be eligible for admission to the programmes, a candidate shall satisfy both the University Entrance Requirements and the Programme Entrance Requirements including but not limited to:"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/first_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="a.    shall comply with the General Regulations;"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/first_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="b.    shall hold a Bachelor’s degree of this University or a qualification of equivalent standard from this University or another comparable institution accepted for this purpose;"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:id="@+id/first_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="c.    for a candidate who is seeking admission on the basis of a qualification from a university or comparable institution outside Hong Kong of which the language of teaching and/or examination is not English, shall satisfy the University English language requirement applicable to high degrees as prescribed under General Regulation G2(b); and"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:id="@+id/first_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="d.    satisfy the examiners in a qualifying examination if required."
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/second_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="Regulations:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/second_title_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text=""
+        android:textSize="15dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/second_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="1. General Regulations of The University
+https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:autoLink="web"
+        />
+    <TextView
+        android:id="@+id/second_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="2. University's Regulations for Taught Postgraduate Curricula:
+https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/tpg-regulations.pdf"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:autoLink="web"
+        />
+    <TextView
+        android:id="@+id/second_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Degree Regulations of MSc(CompSc) for students admitted to the curriculum in 2017-2018 and thereafter:
+http://www.msc-cs.hku.hk/Media/Default/RegulationSyllabus/Regulations_MSc_2017-18.pdf
+http://www.msc-cs.hku.hk/Media/Default/RegulationSyllabus/Syllabus_MSc(CompSc)_2018-19.pdf"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:autoLink="web"
+        />
+-->
+
+    <TextView
+        android:id="@+id/third_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Eligibility"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/third_title_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text=""
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/third_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
 
 </LinearLayout>

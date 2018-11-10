@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.json.JSONObject;
+
 public class TestFragment extends Fragment {
 
     private TextView tv,tv_title;
@@ -44,6 +46,18 @@ public class TestFragment extends Fragment {
         return fragment;
     }
 
+    /**
+     *
+     * @param json 直接通过json传参，方便
+     * @return
+     */
+    public static TestFragment newInstance(JSONObject json){
+        TestFragment fragment=new TestFragment();
+        return fragment;
+    }
+
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -54,7 +68,7 @@ public class TestFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        tv = (TextView) view.findViewById(R.id.fragment_test_tv);
+        /*tv = (TextView) view.findViewById(R.id.fragment_test_tv);
         tv_title=(TextView)view.findViewById(R.id.fragment_test_title);
         Bundle bundle = getArguments();
         if (bundle != null) {
@@ -75,7 +89,7 @@ public class TestFragment extends Fragment {
                 String name = bundle.get("name").toString();
                 tv.setText(name);
             }
-        }
+        }*/
 
     }
 
