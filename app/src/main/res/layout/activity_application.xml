@@ -42,4 +42,5 @@
             app:menu="@menu/navigation" />
 
     </LinearLayout>
+
 </android.support.v4.widget.NestedScrollView>
