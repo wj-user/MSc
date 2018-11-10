@@ -5,84 +5,113 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/fragment_test_title"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
         android:text="Admission Requirements"
         android:textSize="30dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
         android:visibility="visible" />
 
 
-   <!--<TextView
-        android:id="@+id/first_title"
+   <TextView
+        android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Eligibility"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:visibility="gone" />
 
     <TextView
-        android:id="@+id/fisrt_title_intro"
+        android:id="@+id/title1_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
-        android:text="    To be eligible for admission to the programmes, a candidate shall satisfy both the University Entrance Requirements and the Programme Entrance Requirements including but not limited to:"
-        android:textSize="15dp" />
+        android:text=""
+        android:textSize="15dp"
+        android:visibility="gone" />
+
 
     <TextView
-        android:id="@+id/first_a"
+        android:id="@+id/part1_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:text="a.    shall comply with the General Regulations;"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        />
-    <TextView
-        android:id="@+id/first_b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:text="b.    shall hold a Bachelor’s degree of this University or a qualification of equivalent standard from this University or another comparable institution accepted for this purpose;"
+        android:text="part1_1"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:layout_marginRight="20dp"
+        android:visibility="gone"
         />
     <TextView
-        android:id="@+id/first_c"
+        android:id="@+id/part1_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:text="c.    for a candidate who is seeking admission on the basis of a qualification from a university or comparable institution outside Hong Kong of which the language of teaching and/or examination is not English, shall satisfy the University English language requirement applicable to high degrees as prescribed under General Regulation G2(b); and"
+        android:text="part1_2"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:layout_marginRight="20dp"
+        android:visibility="gone"
         />
     <TextView
-        android:id="@+id/first_d"
+        android:id="@+id/part1_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:text="d.    satisfy the examiners in a qualifying examination if required."
+        android:text="part1_3"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:visibility="gone"
         />
-
     <TextView
-        android:id="@+id/second_title"
+        android:id="@+id/part1_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="part1_3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/part1_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="part1_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/part1_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="part1_5"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
         android:text="Regulations:"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/second_title_intro"
+        android:id="@+id/title2_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
@@ -93,7 +122,7 @@
         android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/second_a"
+        android:id="@+id/part2_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
@@ -102,61 +131,123 @@ https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:autoLink="web"
+        android:visibility="gone"
         />
     <TextView
-        android:id="@+id/second_b"
+        android:id="@+id/part2_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:text="2. University's Regulations for Taught Postgraduate Curricula:
-https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/tpg-regulations.pdf"
+        android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:autoLink="web"
+        android:visibility="gone"
         />
     <TextView
-        android:id="@+id/second_c"
+        android:id="@+id/part2_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:text="Degree Regulations of MSc(CompSc) for students admitted to the curriculum in 2017-2018 and thereafter:
-http://www.msc-cs.hku.hk/Media/Default/RegulationSyllabus/Regulations_MSc_2017-18.pdf
-http://www.msc-cs.hku.hk/Media/Default/RegulationSyllabus/Syllabus_MSc(CompSc)_2018-19.pdf"
+        android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:autoLink="web"
+        android:visibility="gone"
         />
--->
+    <TextView
+        android:id="@+id/part2_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:autoLink="web"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/part2_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:autoLink="web"
+        android:visibility="gone"
+        />
 
     <TextView
-        android:id="@+id/third_title"
+        android:id="@+id/title3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Eligibility"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/third_title_intro"
+        android:id="@+id/title3_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
         android:text=""
-        android:textSize="15dp" />
+        android:textSize="15dp"
+        android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/third_a"
+        android:id="@+id/part3_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:visibility="gone"
         />
-
-
+    <TextView
+        android:id="@+id/part3_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/part3_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/part3_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/part3_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        />
 
 
 </LinearLayout>
