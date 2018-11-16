@@ -81,6 +81,7 @@ public class application extends AppCompatActivity {
 
         try{
             json1.put("title","Admission Requirements");
+            json1.put("type","Admission Requirements");
             JSONObject part1=new JSONObject();
             JSONObject part2=new JSONObject();
             JSONObject part3=new JSONObject();
@@ -136,14 +137,50 @@ public class application extends AppCompatActivity {
 
         JSONObject json2=new JSONObject();
         try{
-            json2.put("","");
+            json2.put("title","Application Procedures");
+            json2.put("type","Application Procedures");
+            json2.put("title_intro","Applicants can submit their application via the online application system by clicking the following button.");
+
+            JSONObject part1=new JSONObject();
+            part1.put("title","The following supporting documents should be uploaded to the online application system before the application deadline or expiry of your application account (which is valid for four weeks only), whichever is earlier:");
+            JSONArray data1=new JSONArray();
+            data1.put("• Graduate transcript(s) with grading system of all tertiary level studies");
+            data1.put("• Degree certificate(s)");
+            data1.put("• English Language proficiency test score report, such as TOEFL or IELTS (only for applicants with qualifications from institutions outside Hong Kong where the language of instruction and/or examination is not English)");
+            data1.put("• Proof of Cumulative Grade Point Average (CGPA) / average grade / average mark");
+            data1.put("• Official proof of class ranking, if available");
+            data1.put("• A curriculum vitae (C.V.)");
+            part1.put("data",data1);
+            part1.put("addition1","Applicants are not required to submit original documents during the application stage.  Should an applicant be given an admission offer by the Programme, he/she will receive notification of the need to submit original/certified true copy* of the documents to the MSc(CompSc) Programme Office.");
+            part1.put("addition2","Please note that documents once submitted will not be returned, and will be destroyed if the application is unsuccessful.");
+            part1.put("addition3","*The University will only ACCEPT originals and copies of the documents that have been duly declared as true copies before a notary public.");
+            json2.put("part1",part1);
+
+            JSONObject part2=new JSONObject();
+            part2.put("title","Application Fee");
+            JSONArray data2=new JSONArray();
+            data2.put("The application fee is HK$300 (non-refundable), paid by credit card online.");
+            part2.put("data",data2);
+            json2.put("part2",part2);
+
+
+            JSONObject part3=new JSONObject();
+            part3.put("title","Application Timetable");
+            JSONObject deadline=new JSONObject();
+            deadline.put("Main round","December 31, 2018");
+            deadline.put("Clearing round:","12:00nn (HKT), April 15, 2019");
+            part3.put("deadline",deadline);
+            part3.put("commencement","September 2019");
+            part3.put("addition1","To be considered for a round, you must submit a complete application, including all online / mail-in materials by the day of the deadline.");
+            part3.put("addition2","The results for admission in September are normally available by July of the same year. Hence, applicants who do not hear from the Faculty of Engineering by July 31, 2019 may assume the application to be unsuccessful.");
+            json2.put("part3",part3);
+
+            list.add(TestFragment.newInstance(json2));
         }
         catch (JSONException e){
             list.add(TestFragment.newInstance("Whops, something is wrong!"));
         }
 
-
-        list.add(TestFragment.newInstance("第二页"));
         list.add(TestFragment.newInstance("大学"));
         list.add(TestFragment.newInstance("很难"));
         list.add(TestFragment.newInstance("呵呵"));

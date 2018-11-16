@@ -85,35 +85,86 @@ public class TestFragment extends Fragment {
                 json = new JSONObject(json_string);
                 title.setText(json.get("title").toString());
                 title.setVisibility(View.VISIBLE);
-                for (int i = 1; i <= 5; i++) {   //假设最多5个part
-                    if (json.optJSONObject("part" + i) != null) {     //存在某个part
-                        JSONObject temp = json.optJSONObject("part" + i);//这个part
-                        String number = temp.optString("number");
+                if(json.optString("type").equals("Admission Requirements")) {
+                    for (int i = 1; i <= 5; i++) {   //假设最多5个part
+                        if (json.optJSONObject("part" + i) != null) {     //存在某个part
+                            JSONObject temp = json.optJSONObject("part" + i);//这个part
+                            String number = temp.optString("number");
 
-                        String strTitle = "title" + number;
-                        int title_id = getResources().getIdentifier(strTitle, "id", "com.example.a69477.myapplication");
-                        TextView title = view.findViewById(title_id);
-                        title.setText(temp.optString("title"));
-                        title.setVisibility(View.VISIBLE);
+                            String strTitle = "title" + number;
+                            int title_id = getResources().getIdentifier(strTitle, "id", "com.example.a69477.myapplication");
+                            TextView title = view.findViewById(title_id);
+                            title.setText(temp.optString("title"));
+                            title.setVisibility(View.VISIBLE);
 
-                        String strTitleIntro = strTitle + "_intro";
-                        int title_intro_id = getResources().getIdentifier(strTitleIntro, "id", "com.example.a69477.myapplication");
-                        TextView title_intro = view.findViewById(title_intro_id);
-                        title_intro.setText(temp.optString("intro"));
-                        title_intro.setVisibility(View.VISIBLE);
+                            String strTitleIntro = strTitle + "_intro";
+                            int title_intro_id = getResources().getIdentifier(strTitleIntro, "id", "com.example.a69477.myapplication");
+                            TextView title_intro = view.findViewById(title_intro_id);
+                            title_intro.setText(temp.optString("intro"));
+                            title_intro.setVisibility(View.VISIBLE);
 
-                        JSONArray data = temp.optJSONArray("data");
-                        int length = data.length();
-                        for (int j = 1; j <= length; j++) {
-                            String tempData = data.optString(j - 1);
-                            String title_data_name = "part" + number + "_" + j;
-                            int tempData_id = getResources().getIdentifier(title_data_name, "id", "com.example.a69477.myapplication");
-                            TextView tempDataTextView = view.findViewById(tempData_id);
-                            tempDataTextView.setText(tempData);
-                            tempDataTextView.setVisibility(View.VISIBLE);
+                            JSONArray data = temp.optJSONArray("data");
+                            int length = data.length();
+                            for (int j = 1; j <= length; j++) {
+                                String tempData = data.optString(j - 1);
+                                String title_data_name = "part" + number + "_" + j;
+                                int tempData_id = getResources().getIdentifier(title_data_name, "id", "com.example.a69477.myapplication");
+                                TextView tempDataTextView = view.findViewById(tempData_id);
+                                tempDataTextView.setText(tempData);
+                                tempDataTextView.setVisibility(View.VISIBLE);
+                            }
+
                         }
-
                     }
+                }
+                else if(json.optString("type").equals("Application Procedures")){
+                    TextView title_intro= view.findViewById(R.id.title_intro);
+                    title_intro.setText(json.optString("title_intro"));
+                    title_intro.setVisibility(View.VISIBLE);
+
+                    JSONObject part1=json.optJSONObject("part1");
+                    TextView title1=view.findViewById(R.id.title1);
+                    title1.setText(part1.optString("title"));
+                    title1.setVisibility(View.VISIBLE);
+                    JSONArray data = part1.optJSONArray("data");
+                    for(int i=1;i<=data.length();i++){
+                        String temp_name="part1_"+i;
+                        int temp_id=getResources().getIdentifier(temp_name,"id","com.example.a69477.myapplication");
+                        TextView tempTextView= view.findViewById(temp_id);
+                        tempTextView.setText(data.optString(i-1));
+                        tempTextView.setVisibility(View.VISIBLE);
+                    }
+                    for(int i=1;i<=3;i++){
+                        String temp_name="part1_addition"+i;
+                        int temp_id=getResources().getIdentifier(temp_name,"id","com.example.a69477.myapplication");
+                        TextView tempTextView= view.findViewById(temp_id);
+                        tempTextView.setText(part1.optString("addition"+i));
+                        tempTextView.setVisibility(View.VISIBLE);
+                    }
+
+                    JSONObject part2=json.optJSONObject("part2");
+                    TextView title2= view.findViewById(R.id.title2);
+                    title2.setText(part2.optString("title"));
+                    title2.setVisibility(View.VISIBLE);
+                    TextView part2_1=view.findViewById(R.id.part2_1);
+                    part2_1.setText(part2.optJSONArray("data").optString(0));
+                    part2_1.setVisibility(View.VISIBLE);
+
+                    //注意这里时间还没放
+                    JSONObject part3=json.optJSONObject("part3");
+                    TextView title3= view.findViewById(R.id.title3);
+                    title3.setText(part3.optString("title"));
+                    title3.setVisibility(View.VISIBLE);
+                    for(int i=1;i<=2;i++){
+                        String temp_name="part3_addition"+i;
+                        int temp_id=getResources().getIdentifier(temp_name,"id","com.example.a69477.myapplication");
+                        TextView tempTextView= view.findViewById(temp_id);
+                        tempTextView.setText(part3.optString("addition"+i));
+                        tempTextView.setVisibility(View.VISIBLE);
+                    }
+                }
+                else if(json.optString("type").equals("Information Sessions")){
+
                 }
 
             } catch (JSONException e) {
