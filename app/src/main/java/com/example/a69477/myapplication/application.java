@@ -16,7 +16,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -89,10 +92,10 @@ public class application extends AppCompatActivity {
             part1.put("intro","To be eligible for admission to the programmes, a candidate shall satisfy both the University Entrance Requirements and the Programme Entrance Requirements including but not limited to:");
             //part1的abc数据部分
             JSONArray data1=new JSONArray();
-            data1.put("a.    shall comply with the General Regulations;");
-            data1.put("b.    shall hold a Bachelor’s degree of this University or a qualification of equivalent standard from this University or another comparable institution accepted for this purpose;");
-            data1.put("c.    for a candidate who is seeking admission on the basis of a qualification from a university or comparable institution outside Hong Kong of which the language of teaching and/or examination is not English, shall satisfy the University English language requirement applicable to high degrees as prescribed under General Regulation G2(b); and");
-            data1.put("d.    satisfy the examiners in a qualifying examination if required.");
+            data1.put("a. shall comply with the General Regulations;");
+            data1.put("b. shall hold a Bachelor’s degree of this University or a qualification of equivalent standard from this University or another comparable institution accepted for this purpose;");
+            data1.put("c. for a candidate who is seeking admission on the basis of a qualification from a university or comparable institution outside Hong Kong of which the language of teaching and/or examination is not English, shall satisfy the University English language requirement applicable to high degrees as prescribed under General Regulation G2(b); and");
+            data1.put("d. satisfy the examiners in a qualifying examination if required.");
             part1.put("data",data1);
             part1.put("number",1);
             json1.put("part1",part1);
