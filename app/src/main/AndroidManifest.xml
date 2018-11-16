@@ -23,8 +23,18 @@
         <activity
             android:name=".application"
             android:label="Application " />
+        <activity
+            android:name=".Curriculum"
+            android:label="Curriculum " />
+        <activity
+            android:name=".About"
+            android:label="About " />
+        <activity
+            android:name=".Sresource"
+            android:label="Student Resource " />
         <activity android:name=".ProSchedule" />
         <activity android:name=".CompositionFees"></activity>
+
     </application>
 
 </manifest>

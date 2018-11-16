@@ -94,15 +94,21 @@ public class MainActivity extends AppCompatActivity  {
                     startActivityForResult(intent, 11);
                     overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 } else if (id == R.id.nav_Curriculum) {
-
+                    Intent intent = new Intent(MainActivity.this, Curriculum.class);
+                    startActivityForResult(intent, 11);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 } else if (id == R.id.nav_Gratuate) {
 
                 } else if (id == R.id.nav_News) {
 
                 } else if (id == R.id.nav_About) {
-
+                    Intent intent = new Intent(MainActivity.this, About.class);
+                    startActivityForResult(intent, 11);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 } else if (id == R.id.nav_Resource) {
-
+                    Intent intent = new Intent(MainActivity.this, Sresource.class);
+                    startActivityForResult(intent, 11);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 }
 
                 mDrawerLayout.closeDrawers();
