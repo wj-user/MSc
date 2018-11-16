@@ -26,8 +26,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="Eligibility"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone" />
     <Button
         android:layout_width="wrap_content"
@@ -38,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:text="Eligibility"
         android:textSize="15dp"
@@ -139,6 +143,7 @@
         android:layout_marginRight="15dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
     <TextView
         android:id="@+id/part1_addition2"
@@ -149,6 +154,7 @@
         android:layout_marginRight="15dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
     <TextView
         android:id="@+id/part1_addition3"
@@ -159,6 +165,7 @@
         android:layout_marginRight="15dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
     <TextView
         android:id="@+id/title2"
@@ -336,7 +343,7 @@ https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="15dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
@@ -349,9 +356,10 @@ https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
     <TextView
         android:id="@+id/part3_addition2"
@@ -359,8 +367,9 @@ https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
 </LinearLayout>
