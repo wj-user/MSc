@@ -21,8 +21,18 @@
         android:textColor="#000000"
         android:textStyle="bold"
         android:visibility="visible" />
-
-
+    <TextView
+        android:id="@+id/title_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Eligibility"
+        android:textSize="20dp"
+        android:visibility="gone" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
    <TextView
         android:id="@+id/title1"
         android:layout_width="wrap_content"
@@ -120,6 +130,36 @@
         android:textColor="#000000"
         android:visibility="gone"
         />
+    <TextView
+        android:id="@+id/part1_addition1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text=""
+        android:textSize="15dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/part1_addition2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text=""
+        android:textSize="15dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/part1_addition3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text=""
+        android:textSize="15dp"
+        android:visibility="gone"/>
     <TextView
         android:id="@+id/title2"
         android:layout_width="wrap_content"
@@ -303,6 +343,24 @@ https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
         android:visibility="gone"
         android:textColor="#000000"
         />
-
-
+    <TextView
+        android:id="@+id/part3_addition1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text=""
+        android:textSize="15dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/part3_addition2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text=""
+        android:textSize="15dp"
+        android:visibility="gone"/>
 </LinearLayout>
