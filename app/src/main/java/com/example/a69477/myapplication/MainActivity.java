@@ -126,9 +126,7 @@ public class MainActivity extends AppCompatActivity  {
                     startActivityForResult(intent, 11);
                     overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 } else if (id == R.id.nav_Resource) {
-                    Intent intent = new Intent(MainActivity.this, Sresource.class);
-                    startActivityForResult(intent, 11);
-                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+                    
                 }
 
                 mDrawerLayout.closeDrawers();
