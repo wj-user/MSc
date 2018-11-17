@@ -180,8 +180,8 @@ public class CurriculumFragment extends Fragment {
                     part4_1.setText(part4.optJSONArray("data").optString(0));
                     part4_1.setVisibility(View.VISIBLE);
 
-                }else if(json.optString("title").equals("")){
-
+                }else if(json.optString("title").equals("Duration of Study")){
+                        JSONObject part1 = json.optJSONObject("part1");
                 }
 
 

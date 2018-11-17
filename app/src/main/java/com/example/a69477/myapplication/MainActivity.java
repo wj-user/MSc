@@ -76,6 +76,24 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
 
+        CardView my_application_ddl = (CardView) findViewById(R.id.ddlCard);
+        my_application_ddl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(MainActivity.this,application.class);
+                startActivity(intent3);
+            }
+        });
+
+        CardView my_pro_overview = (CardView) findViewById(R.id.poCard);
+        my_pro_overview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent(MainActivity.this,Curriculum.class);
+                startActivity(intent4);
+            }
+        });
+
 
         //---------------------------------------------------------------------
         NavigationView navView = (NavigationView) findViewById(R.id.nav_view);

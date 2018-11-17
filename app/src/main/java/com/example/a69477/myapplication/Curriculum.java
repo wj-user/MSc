@@ -160,6 +160,31 @@ public class Curriculum extends AppCompatActivity {
 
         }
 
+        JSONObject json3 = new JSONObject();
+        try{
+            json3.put("title", "Duration of Study");
+            JSONObject part1 = new JSONObject();
+            part1.put("title", "Duration of Study");
+            JSONArray data1 = new JSONArray();
+            data1.put("The MSc(CompSc) programme is offered in both full-time and part-time modes.");
+            data1.put("There are 3 semesters in an academic year, i.e. semester 1: September – December, semester 2: January – May and the summer semester: June – August.");
+            data1.put("Part-time: 2-3 years");
+            data1.put("Full-time: 1-2 years");
+            part1.put("data",data1);
+            json3.put("part1",part1);
+
+            JSONObject part2 = new JSONObject();
+            part2.put("title", "Class Schedule");
+            JSONArray data2 = new JSONArray();
+            data2.put("Classes are usually conducted in weekday evenings from 7:00 p.m., or during weekends.  Some courses will be offered mainly for full-time students in weekday daytime.");
+            part2.put("data",data2);
+            json3.put("part2",part2);
+
+            list.add(CurriculumFragment.newInstance(json3));
+        }
+        catch(JSONException e){
+            list.add(CurriculumFragment.newInstance("Whops, something is wrong!"));
+        }
 
 
         list.add(CurriculumFragment.newInstance("Curriculum第一页"));
