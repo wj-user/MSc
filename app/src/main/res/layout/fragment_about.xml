@@ -111,12 +111,14 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
-        android:layout_height="170dp">
+        android:layout_height="170dp"
+        android:background="#FFC400">
         <ImageView
             android:id="@+id/teacher1_url"
             android:layout_width="204dp"
             android:layout_height="170dp"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            />
         <TextView
             android:id="@+id/teacher1_name"
             android:layout_width="160dp"
@@ -174,7 +176,8 @@
         android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        android:visibility="gone">
+        android:visibility="gone"
+        android:background="#FFC400">
         <ImageView
             android:id="@+id/teacher2_url"
             android:layout_width="204dp"
