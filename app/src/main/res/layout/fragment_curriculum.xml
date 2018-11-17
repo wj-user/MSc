@@ -29,9 +29,11 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="20dp"
         android:text=""
+        android:autoLink="web"
         android:textColor="#000000"
         android:textSize="15dp"
-        android:visibility="visible" />
+        android:textColorLink="@color/colorPrimary"
+        android:visibility="gone" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/card1"

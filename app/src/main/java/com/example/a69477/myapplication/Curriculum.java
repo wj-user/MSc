@@ -160,8 +160,52 @@ public class Curriculum extends AppCompatActivity {
 
         }
 
+        JSONObject json3 = new JSONObject();
+        try{
+            json3.put("title", "Duration of Study");
+            JSONObject part1 = new JSONObject();
+            part1.put("title", "Duration of Study");
+            JSONArray data1 = new JSONArray();
+            data1.put("The MSc(CompSc) programme is offered in both full-time and part-time modes.");
+            data1.put("There are 3 semesters in an academic year, i.e. semester 1: September – December, semester 2: January – May and the summer semester: June – August.");
+            data1.put("Part-time: 2-3 years");
+            data1.put("Full-time: 1-2 years");
+            part1.put("data",data1);
+            json3.put("part1",part1);
 
+            JSONObject part2 = new JSONObject();
+            part2.put("title", "Class Schedule");
+            JSONArray data2 = new JSONArray();
+            data2.put("Classes are usually conducted in weekday evenings from 7:00 p.m., or during weekends.  Some courses will be offered mainly for full-time students in weekday daytime.");
+            part2.put("data",data2);
+            json3.put("part2",part2);
 
+            list.add(CurriculumFragment.newInstance(json3));
+        }
+        catch(JSONException e){
+            list.add(CurriculumFragment.newInstance("Whops, something is wrong!"));
+        }
+
+        JSONObject json4 = new JSONObject();
+        try {
+            json4.put("title","Regulations");
+            JSONObject part1 = new JSONObject();
+            part1.put("title","REGULATIONS");
+            JSONArray data = new JSONArray();
+            data.put("1. General Regulations of The University \nhttps://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf");
+            data.put("2. University's Regulations for Taught Postgraduate Curricula: \n https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/tpg-regulations.pdf");
+            data.put("3. Degree Regulations of MSc(CompSc)\n" +
+                    "\n" +
+                    "The regulations: https://www.msc-cs.hku.hk/Media/Default/RegulationSyllabus/Regulations_MSc_2017-18.pdf " + "\n" +
+                    "and syllabus: https://www.msc-cs.hku.hk/Media/Default/RegulationSyllabus/Syllabus_MSc(CompSc)_2018-19.pdf" + "\n" +
+                    "are applicable to students admitted to the curriculum in 2018-2019 and thereafter.");
+            part1.put("data",data);
+            json4.put("part1",part1);
+            list.add(CurriculumFragment.newInstance(json4));
+        }
+        catch (JSONException e){
+            list.add(CurriculumFragment.newInstance("Whops, something is wrong!"));
+        }
         list.add(CurriculumFragment.newInstance("Curriculum第一页"));
         list.add(CurriculumFragment.newInstance("第二页"));
         list.add(CurriculumFragment.newInstance("大学"));
