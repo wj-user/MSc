@@ -83,6 +83,7 @@ public class Curriculum extends AppCompatActivity {
             data1.put("The MSc(CompSc) programme is a comprehensive postgraduate study programme provides advanced and in-depth learning in Computer Science.  The programme is credit unit based, with courses of both applied and fundamental nature.");
             data1.put("Students can choose focussed streams of study or a comprehensive and diversified study in Computer Science, i.e. the General Stream.");
             data1.put("Focussed streams of study represent a cohesive collection of related courses that provides both fundamental and in-depth exposure to students in a given ICT domain.  Students can extend and deepen their knowledge in the specialization streams in Cyber Security, Multimedia Computing and Financial Computing. ");
+            part1.put("data",data1);
             json1.put("part1",part1);
 
             JSONArray stream=new JSONArray();
@@ -153,7 +154,7 @@ public class Curriculum extends AppCompatActivity {
         JSONObject json2=new JSONObject();
         try{
             json2.put("title","Courses");
-            
+
         }
         catch (JSONException e){
 
