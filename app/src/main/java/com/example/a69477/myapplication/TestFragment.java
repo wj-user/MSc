@@ -9,7 +9,10 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -81,6 +84,8 @@ public class TestFragment extends Fragment {
         title=view.findViewById(R.id.title);
         if(bundle.getString("JSON_STRING")!=null) {
             try {
+                ImageView myheader =  view.findViewById(R.id.adm_header);
+                Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/Application.jpg").into(myheader);
                 String json_string = bundle.getString("JSON_STRING");
                 json = new JSONObject(json_string);
                 title.setText(json.get("title").toString());

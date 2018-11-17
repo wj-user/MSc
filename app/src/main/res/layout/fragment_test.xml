@@ -2,16 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/adm_header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"/>
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="5dp"
         android:text="Admission Requirements"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textColor="#000000"
         android:textStyle="bold"
         android:visibility="visible" />
@@ -20,8 +26,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="Eligibility"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone" />
     <Button
         android:layout_width="wrap_content"
@@ -31,20 +40,25 @@
         android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:text="Eligibility"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
         android:visibility="gone" />
 
     <TextView
         android:id="@+id/title1_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone" />
 
 
@@ -52,62 +66,72 @@
         android:id="@+id/part1_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:text="part1_1"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/part1_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:text="part1_2"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/part1_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:text="part1_3"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/part1_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:text="part1_3"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/part1_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:text="part1_5"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:textColor="#000000"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/part1_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:text="part1_5"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
         android:visibility="gone"
         />
     <TextView
@@ -119,6 +143,7 @@
         android:layout_marginRight="15dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
     <TextView
         android:id="@+id/part1_addition2"
@@ -129,6 +154,7 @@
         android:layout_marginRight="15dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
     <TextView
         android:id="@+id/part1_addition3"
@@ -139,6 +165,7 @@
         android:layout_marginRight="15dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
     <TextView
         android:id="@+id/title2"
@@ -146,8 +173,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
         android:text="Regulations:"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
         android:visibility="gone"/>
 
     <TextView
@@ -156,65 +186,82 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
 
     <TextView
         android:id="@+id/part2_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:text="1. General Regulations of The University
 https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:autoLink="web"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorPrimary"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/part2_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:autoLink="web"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorPrimary"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/part2_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:autoLink="web"
+        android:textColorLink="@color/colorPrimary"
+        android:textColor="#000000"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/part2_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:autoLink="web"
+        android:textColorLink="@color/colorPrimary"
+        android:textColor="#000000"
+        android:textSize="15dp"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/part2_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:autoLink="web"
+        android:textColorLink="@color/colorPrimary"
+        android:textColor="#000000"
         android:visibility="gone"
         />
 
@@ -223,8 +270,12 @@ https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
         android:text="Eligibility"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
         android:visibility="gone"/>
 
     <TextView
@@ -236,57 +287,68 @@ https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
         android:layout_marginRight="15dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
 
     <TextView
         android:id="@+id/part3_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:textColor="#000000"
         android:visibility="gone"
         />
     <TextView
         android:id="@+id/part3_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:visibility="gone"
+        android:textColor="#000000"
         />
     <TextView
         android:id="@+id/part3_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:visibility="gone"
+        android:textColor="#000000"
         />
     <TextView
         android:id="@+id/part3_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:visibility="gone"
+        android:textColor="#000000"
         />
     <TextView
         android:id="@+id/part3_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
         android:text=""
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:visibility="gone"
+        android:textColor="#000000"
         />
     <TextView
         android:id="@+id/part3_addition1"
@@ -294,9 +356,10 @@ https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
     <TextView
         android:id="@+id/part3_addition2"
@@ -304,8 +367,9 @@ https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:text=""
         android:textSize="15dp"
+        android:textColor="#000000"
         android:visibility="gone"/>
 </LinearLayout>
