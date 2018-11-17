@@ -3,6 +3,7 @@ package com.example.a69477.myapplication;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -79,6 +80,8 @@ public class CurriculumFragment extends Fragment {
         Bundle bundle= getArguments();
         JSONObject json=new JSONObject();
         title=view.findViewById(R.id.title);
+        ImageView curri_header = view.findViewById(R.id.curri_header);
+        Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/ProgrammeOverview.jpg").into(curri_header);
         if(bundle.getString("JSON_STRING")!=null) {
             try {
                 String json_string = bundle.getString("JSON_STRING");
@@ -92,6 +95,8 @@ public class CurriculumFragment extends Fragment {
                     String imageUrl=cyber.optString("imageUrl");
                     String intro = cyber.optString("Cyber Security");
 
+                    CardView cardView1 = view.findViewById(R.id.card1);
+                    cardView1.setVisibility(View.VISIBLE);
                     ImageView imageView=view.findViewById(R.id.card1_img);
                     Glide.with(this).load(imageUrl).into(imageView);
 
@@ -101,7 +106,21 @@ public class CurriculumFragment extends Fragment {
                     TextView card1_intro=view.findViewById(R.id.card1_intro);
                     card1_intro.setText(intro);
 
+                    JSONObject multimedia = data.optJSONObject(1);
+                    String title1 = "Multimedia Computing";
+                    String imageUrl1 = multimedia.optString("imageUrl");
+                    String intro1 = multimedia.optString("Multimedia Computing");
 
+                    CardView cardView2 = view.findViewById(R.id.card2);
+                    cardView2.setVisibility(View.VISIBLE);
+                    ImageView imageView2 = view.findViewById(R.id.card2_img);
+                    Glide.with(this).load(imageUrl1).into(imageView2);
+
+                    TextView card2_title=view.findViewById(R.id.card2_title);
+                    card2_title.setText(title1);
+
+                    TextView card2_intro=view.findViewById(R.id.card2_intro);
+                    card2_intro.setText(intro1);
 
                 }else if(json.optString("title").equals("")){
 
