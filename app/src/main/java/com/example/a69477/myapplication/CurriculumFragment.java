@@ -89,7 +89,7 @@ public class CurriculumFragment extends Fragment {
                 title.setText(json.get("title").toString());
                 title.setVisibility(View.VISIBLE);
                 if(json.optString("title").equals("Programme Overview")){
-                    String titleIntro=json.optJSONObject("part1").optJSONArray("data").optString(0);
+                    String titleIntro=json.optJSONObject("part1").optJSONArray("data").optString(0)+"\n\n"+json.optJSONObject("part1").optJSONArray("data").optString(1)+"\n\n"+json.optJSONObject("part1").optJSONArray("data").optString(2)+"\n";
                     TextView title_intro=view.findViewById(R.id.title_intro);
                     title_intro.setText(titleIntro);
 
