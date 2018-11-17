@@ -110,9 +110,9 @@ public class CurriculumFragment extends Fragment {
                     card1_intro.setText(intro);
 
                     JSONObject multimedia = data.optJSONObject(1);
-                    String title2 = "Multimedia Computing";
+                    String title2Text = "Multimedia Computing";
                     String imageUrl2 = multimedia.optString("imageUrl");
-                    String intro2 = multimedia.optString("Multimedia Computing");
+                    String intro2Text = multimedia.optString("Multimedia Computing");
 
                     CardView cardView2 = view.findViewById(R.id.card2);
                     cardView2.setVisibility(View.VISIBLE);
@@ -120,25 +120,25 @@ public class CurriculumFragment extends Fragment {
                     Glide.with(this).load(imageUrl2).into(imageView2);
 
                     TextView card2_title=view.findViewById(R.id.card2_title);
-                    card2_title.setText(title2);
+                    card2_title.setText(title2Text);
                     TextView card2_intro=view.findViewById(R.id.card2_intro);
-                    card2_intro.setText(intro2);
+                    card2_intro.setText(intro2Text);
 
                     JSONObject financial = data.optJSONObject(2);
-                    String title3="Financial Computing";
+                    String title3Text="Financial Computing";
                     String imageUrl3=financial.optString("imageUrl");
-                    String intro3=financial.optString("Financial Computing");
+                    String intro3Text=financial.optString("Financial Computing");
                     CardView cardView3=view.findViewById(R.id.card3);
                     cardView3.setVisibility(View.VISIBLE);
                     ImageView imageView3=view.findViewById(R.id.card3_img);
                     Glide.with(this).load(imageUrl3).into(imageView3);
                     TextView card3_title=view.findViewById(R.id.card3_title);
-                    card3_title.setText(title3);
+                    card3_title.setText(title3Text);
                     TextView card3_intro=view.findViewById(R.id.card3_intro);
-                    card3_intro.setText(intro3);
+                    card3_intro.setText(intro3Text);
 
                     JSONObject general = data.optJSONObject(3);
-                    String title4="General Stream";
+                    String title4Text="General Stream";
                     String imageUrl4=general.optString("imageUrl");
                     String intro4=general.optString("General Stream");
                     CardView cardView4=view.findViewById(R.id.card4);
@@ -146,12 +146,39 @@ public class CurriculumFragment extends Fragment {
                     ImageView imageView4=view.findViewById(R.id.card4_img);
                     Glide.with(this).load(imageUrl4).into(imageView4);
                     TextView card4_title=view.findViewById(R.id.card4_title);
-                    card4_title.setText(title4);
+                    card4_title.setText(title4Text);
                     TextView card4_intro=view.findViewById(R.id.card4_intro);
                     card4_intro.setText(intro4);
 
+                    JSONObject part2=json.optJSONObject("part2");
+                    TextView title2=view.findViewById(R.id.title2);
+                    title2.setText(part2.optString("title"));
+                    title2.setVisibility(View.VISIBLE);
+                    TextView part2_1=view.findViewById(R.id.part2_1);
+                    part2_1.setText(part2.optJSONArray("data").optString(0));
+                    part2_1.setVisibility(View.VISIBLE);
+
+                    JSONObject part3=json.optJSONObject("part3");
+                    TextView title3=view.findViewById(R.id.title3);
+                    title3.setText(part3.optString("title"));
+                    title3.setVisibility(View.VISIBLE);
+                    TextView title3_intro=view.findViewById(R.id.title3_intro);
+                    title3_intro.setText(part3.optString("intro"));
+                    TextView part3_1=view.findViewById(R.id.part3_1);
+                    part3_1.setText(part3.optJSONArray("data").optString(0));
+                    part3_1.setVisibility(View.VISIBLE);
+                    TextView part3_2=view.findViewById(R.id.part3_2);
+                    part3_2.setText(part3.optJSONArray("data").optString(1));
+                    part3_2.setVisibility(View.VISIBLE);
 
 
+                    JSONObject part4=json.optJSONObject("part4");
+                    TextView title4=view.findViewById(R.id.title4);
+                    title4.setText(part4.optString("title"));
+                    title4.setVisibility(View.VISIBLE);
+                    TextView part4_1=view.findViewById(R.id.part4_1);
+                    part4_1.setText(part4.optJSONArray("data").optString(0));
+                    part4_1.setVisibility(View.VISIBLE);
 
                 }else if(json.optString("title").equals("")){
 
