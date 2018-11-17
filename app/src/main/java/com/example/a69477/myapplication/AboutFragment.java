@@ -81,7 +81,6 @@ public class AboutFragment extends Fragment {
         JSONObject json=new JSONObject();
         title=view.findViewById(R.id.title);
         ImageView imageView = view.findViewById(R.id.about_header);
-        Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/mfpd-L.jpg").into(imageView);
         if(bundle.getString("JSON_STRING")!=null) {
             try {
                 String json_string = bundle.getString("JSON_STRING");
@@ -89,6 +88,7 @@ public class AboutFragment extends Fragment {
                 title.setText(json.get("title").toString());
                 title.setVisibility(View.VISIBLE);
                 if (json.optString("title").equals("MESSAGE FROM PROGRAM DIRECTOR")){
+                    Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/mfpd-L.jpg").into(imageView);
                     JSONObject part1 = json.optJSONObject("part1");
                     TextView title1 = view.findViewById(R.id.title);
                     title1.setText(part1.optString("title"));
@@ -115,6 +115,43 @@ public class AboutFragment extends Fragment {
 
                     ImageView mycard1_img = view.findViewById(R.id.about_card1_img);
                     Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/instructors/ChowKP-Square250.jpg").into(mycard1_img);
+                }
+                else if(json.optString("type").equals("faculty")){
+                    Glide.with(this).load(json.optString("imageUrl")).into(imageView);
+                    JSONArray data= json.optJSONArray("data");
+                    for(int i=1;i<=data.length();i++){
+                        JSONObject teacher=data.optJSONObject(i-1);
+                        String name=teacher.optString("name");
+                        String url=teacher.optString("url");
+                        String degree=teacher.optString("degree");
+                        String study_content=teacher.optString("study_content");
+
+                        String CardName="teacher"+i;
+                        int CardId=getResources().getIdentifier(CardName,"id","com.example.a69477.myapplication");
+                        CardView teacherCard=view.findViewById(CardId);
+                        teacherCard.setVisibility(View.VISIBLE);
+
+                        String imageName="teacher"+i+"_url";
+                        int ImageId=getResources().getIdentifier(imageName,"id","com.example.a69477.myapplication");
+                        ImageView teacher_image=view.findViewById(ImageId);
+                        Glide.with(this).load(url).into(teacher_image);
+
+                        String nameName="teacher"+i+"_name";
+                        int nameId=getResources().getIdentifier(nameName,"id","com.example.a69477.myapplication");
+                        TextView teacher_name=view.findViewById(nameId);
+                        teacher_name.setText(name);
+
+                        String degreeName="teacher"+i+"_degree";
+                        int degreeId=getResources().getIdentifier(degreeName,"id","com.example.a69477.myapplication");
+                        TextView teacher_degree=view.findViewById(degreeId);
+                        teacher_degree.setText(degree);
+
+                        String study_contentName="teacher"+i+"_study_content";
+                        int study_contentId=getResources().getIdentifier(study_contentName,"id","com.example.a69477.myapplication");
+                        TextView teacher_study_content=view.findViewById(study_contentId);
+                        teacher_study_content.setText(study_content);
+                    }
+
                 }
             } catch (JSONException e) {
                 title.setText("Whops,something is wrong");
