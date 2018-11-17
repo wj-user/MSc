@@ -181,7 +181,36 @@ public class CurriculumFragment extends Fragment {
                     part4_1.setVisibility(View.VISIBLE);
 
                 }else if(json.optString("title").equals("Duration of Study")){
+                        Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/Schedule.jpg").into(curri_header);
                         JSONObject part1 = json.optJSONObject("part1");
+                        TextView title1 = view.findViewById(R.id.title);
+                        title1.setText(part1.optString("title"));
+                        TextView title1_intro = view.findViewById(R.id.title_intro);
+                        JSONArray data = part1.optJSONArray("data");
+                        String intro_info = data.optString(0) + "\n" + "\n "+ data.optString(1) + "\n" + "\n"+ data.optString(2) + "\n" + "\n" + data.optString(3);
+                        title1_intro.setText(intro_info);
+                        title1_intro.setVisibility(View.VISIBLE);
+
+                        JSONObject part2 = json.optJSONObject("part2");
+                        TextView title2 = view.findViewById(R.id.title2);
+                        title2.setText(part2.optString("title"));
+                        title2.setVisibility(View.VISIBLE);
+                        TextView title2_intro = view.findViewById(R.id.title2_intro);
+                        JSONArray data2 = part2.optJSONArray("data");
+                        String intro_info2 = data2.optString(0);
+                        title2_intro.setVisibility(View.VISIBLE);
+                        title2_intro.setText(intro_info2);
+                } else if (json.optString("title").equals("Regulations")){
+                        Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/Regulation.jpg").into(curri_header);
+                        JSONObject part1 = json.optJSONObject("part1");
+                        TextView title1 = view.findViewById(R.id.title);
+                        title1.setText(part1.optString("title"));
+                        TextView title1_intro = view.findViewById(R.id.title_intro);
+                        title1_intro.setVisibility(View.VISIBLE);
+                        JSONArray data = part1.optJSONArray("data");
+                        String intro_info = data.optString(0) + "\n" + "\n "+ data.optString(1) + "\n" + "\n"+ data.optString(2);
+                        title1_intro.setText(intro_info);
+
                 }
 
 

@@ -186,7 +186,26 @@ public class Curriculum extends AppCompatActivity {
             list.add(CurriculumFragment.newInstance("Whops, something is wrong!"));
         }
 
-
+        JSONObject json4 = new JSONObject();
+        try {
+            json4.put("title","Regulations");
+            JSONObject part1 = new JSONObject();
+            part1.put("title","REGULATIONS");
+            JSONArray data = new JSONArray();
+            data.put("1. General Regulations of The University \nhttps://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/genreg.pdf");
+            data.put("2. University's Regulations for Taught Postgraduate Curricula: \n https://www4.hku.hk/pubunit/drcd/files/pgdr2017-18/tpg-regulations.pdf");
+            data.put("3. Degree Regulations of MSc(CompSc)\n" +
+                    "\n" +
+                    "The regulations: https://www.msc-cs.hku.hk/Media/Default/RegulationSyllabus/Regulations_MSc_2017-18.pdf " + "\n" +
+                    "and syllabus: https://www.msc-cs.hku.hk/Media/Default/RegulationSyllabus/Syllabus_MSc(CompSc)_2018-19.pdf" + "\n" +
+                    "are applicable to students admitted to the curriculum in 2018-2019 and thereafter.");
+            part1.put("data",data);
+            json4.put("part1",part1);
+            list.add(CurriculumFragment.newInstance(json4));
+        }
+        catch (JSONException e){
+            list.add(CurriculumFragment.newInstance("Whops, something is wrong!"));
+        }
         list.add(CurriculumFragment.newInstance("Curriculum第一页"));
         list.add(CurriculumFragment.newInstance("第二页"));
         list.add(CurriculumFragment.newInstance("大学"));
