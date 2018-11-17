@@ -37,12 +37,12 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-        android:visibility="gone">
+        >
 
         <ImageView
             android:id="@+id/card1_img"
-            android:layout_width="192dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop" />
 
         <TextView
@@ -51,7 +51,7 @@
             android:layout_height="20dp"
             android:layout_gravity="right"
             android:background="#FFC400"
-            android:text="Cyber Security"
+            android:text=""
             android:textColor="#ffffff"
             android:paddingLeft="5dp"
             android:textSize="12dp"/>
@@ -65,7 +65,8 @@
             android:textColor="#000000"
             android:textSize="10dp"
             android:paddingLeft="5dp"
-            android:text="The Cyber Security Stream is a multidisciplinary area of study and professional activity concerned with state-of-the-art technology in cyber security. The curriculum covers different aspects of cyber security from different perspectives, including technical, organisational, human-oriented and legal."/>
+            android:text="">
+        </TextView>
     </android.support.v7.widget.CardView>
 
 

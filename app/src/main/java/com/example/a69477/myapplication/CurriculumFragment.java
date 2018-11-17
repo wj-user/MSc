@@ -6,7 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -77,7 +80,38 @@ public class CurriculumFragment extends Fragment {
         JSONObject json=new JSONObject();
         title=view.findViewById(R.id.title);
         if(bundle.getString("JSON_STRING")!=null) {
+            try {
+                String json_string = bundle.getString("JSON_STRING");
+                json = new JSONObject(json_string);
+                title.setText(json.get("title").toString());
+                title.setVisibility(View.VISIBLE);
+                if(json.optString("title").equals("Programme Overview")){
+                    JSONArray data= json.optJSONArray("stream");
+                    JSONObject cyber=data.optJSONObject(0);
+                    String title="Cyber Security";
+                    String imageUrl=cyber.optString("imageUrl");
+                    String intro = cyber.optString("Cyber Security");
 
+                    ImageView imageView=view.findViewById(R.id.card1_img);
+                    Glide.with(this).load(imageUrl).into(imageView);
+
+                    TextView card1_title=view.findViewById(R.id.card1_title);
+                    card1_title.setText(title);
+
+                    TextView card1_intro=view.findViewById(R.id.card1_intro);
+                    card1_intro.setText(intro);
+
+
+
+                }else if(json.optString("title").equals("")){
+
+                }
+
+
+
+            }catch (JSONException e) {
+                title.setText("Whops,something is wrong");
+            }
         }
         else {
             title.setText(bundle.get("name").toString());
