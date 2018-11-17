@@ -36,7 +36,20 @@
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:text="MSc(CompSc) Alumni Association"/>
+            android:text="Useful Links"/>
+        <TextView
+            android:id="@+id/useful_intro"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:autoLink="web"
+            android:textColorLink="@color/colorPrimary"
+            android:paddingBottom="10dp"
+            android:text=""/>
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

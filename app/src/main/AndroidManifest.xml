@@ -29,12 +29,10 @@
         <activity
             android:name=".About"
             android:label="About " />
-        <activity
-            android:name=".Sresource"
-            android:label="Student Resource " />
         <activity android:name=".ProSchedule" />
         <activity android:name=".CompositionFees"></activity>
         <activity android:name=".Alumni"></activity>
+        <activity android:name=".UsefulLinks"></activity>
     </application>
 
 </manifest>
