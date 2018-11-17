@@ -37,6 +37,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
+        android:visibility="gone"
         >
 
         <ImageView
@@ -82,8 +83,8 @@
 
         <ImageView
             android:id="@+id/card2_img"
-            android:layout_width="192dp"
-            android:layout_height="220dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop" />
 
         <TextView
@@ -121,8 +122,8 @@
 
         <ImageView
             android:id="@+id/card3_img"
-            android:layout_width="192dp"
-            android:layout_height="220dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop" />
 
         <TextView
@@ -160,8 +161,8 @@
 
         <ImageView
             android:id="@+id/card4_img"
-            android:layout_width="192dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop" />
 
         <TextView
