@@ -4,14 +4,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/curri_header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"/>
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="5dp"
         android:text="curriculum"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textColor="#000000"
         android:textStyle="bold"
         android:visibility="visible" />
@@ -20,10 +25,164 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
-        android:textSize="20dp"
+        android:text=""
+        android:textSize="15dp"
         android:visibility="visible" />
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/card1_img"
+            android:layout_width="192dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/card1_title"
+            android:layout_width="172dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:background="#FFC400"
+            android:text="Cyber Security"
+            android:textColor="#ffffff"
+            android:paddingLeft="5dp"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/card1_intro"
+            android:layout_width="172dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="130dp"
+            android:layout_gravity="right"
+            android:background="#FFC400"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:paddingLeft="5dp"
+            android:text="The Cyber Security Stream is a multidisciplinary area of study and professional activity concerned with state-of-the-art technology in cyber security. The curriculum covers different aspects of cyber security from different perspectives, including technical, organisational, human-oriented and legal."/>
+    </android.support.v7.widget.CardView>
 
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/card2_img"
+            android:layout_width="192dp"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/card2_title"
+            android:layout_width="172dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:background="#FFC400"
+            android:text="Multimedia Computing"
+            android:textColor="#ffffff"
+            android:paddingLeft="5dp"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/card2_intro"
+            android:layout_width="172dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="200dp"
+            android:layout_gravity="right"
+            android:background="#FFC400"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:paddingLeft="5dp"
+            android:text=""/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/card3_img"
+            android:layout_width="192dp"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/card3_title"
+            android:layout_width="172dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:background="#FFC400"
+            android:text="Financial Computing"
+            android:textColor="#ffffff"
+            android:paddingLeft="5dp"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/card3_intro"
+            android:layout_width="172dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="200dp"
+            android:layout_gravity="right"
+            android:background="#FFC400"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:paddingLeft="5dp"
+            android:text=""/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/card4_img"
+            android:layout_width="192dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/card4_title"
+            android:layout_width="172dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:background="#FFC400"
+            android:text="General Stream"
+            android:textColor="#ffffff"
+            android:paddingLeft="5dp"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/card4_intro"
+            android:layout_width="172dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="130dp"
+            android:layout_gravity="right"
+            android:background="#FFC400"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:paddingLeft="5dp"
+            android:text=""/>
+    </android.support.v7.widget.CardView>
 </LinearLayout>

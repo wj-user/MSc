@@ -169,6 +169,7 @@ public class TestFragment extends Fragment {
                     }
                 }
                 else if(json.optString("type").equals("Information Sessions")){
+                    Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/mfpd-L.jpg").into(myheader);
                     JSONObject part1=json.optJSONObject("part1");
                     TextView title1=view.findViewById(R.id.title1);
                     title1.setText(part1.optString("title"));
