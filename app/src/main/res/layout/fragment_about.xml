@@ -114,7 +114,7 @@
         android:layout_height="170dp">
         <ImageView
             android:id="@+id/teacher1_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -177,7 +177,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher2_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -240,7 +240,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher3_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -303,7 +303,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher4_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -366,7 +366,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher5_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -429,7 +429,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher6_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -492,7 +492,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher7_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -555,7 +555,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher8_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -618,7 +618,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher9_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -681,7 +681,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher10_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -744,7 +744,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher11_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -807,7 +807,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher12_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -870,7 +870,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher13_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -933,7 +933,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher14_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -996,7 +996,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher15_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1059,7 +1059,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher16_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1122,7 +1122,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher17_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1185,7 +1185,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher18_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1248,7 +1248,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher19_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1311,7 +1311,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher20_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1374,7 +1374,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher21_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1437,7 +1437,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher22_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1500,7 +1500,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher23_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1563,7 +1563,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher24_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1626,7 +1626,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher25_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1689,7 +1689,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher26_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1752,7 +1752,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher27_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1815,7 +1815,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher28_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
@@ -1878,7 +1878,7 @@
         android:visibility="gone">
         <ImageView
             android:id="@+id/teacher29_url"
-            android:layout_width="wrap_content"
+            android:layout_width="204dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"/>
         <TextView
