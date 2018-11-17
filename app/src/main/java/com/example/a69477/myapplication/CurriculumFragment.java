@@ -89,6 +89,10 @@ public class CurriculumFragment extends Fragment {
                 title.setText(json.get("title").toString());
                 title.setVisibility(View.VISIBLE);
                 if(json.optString("title").equals("Programme Overview")){
+                    String titleIntro=json.optJSONObject("part1").optJSONArray("data").optString(0);
+                    TextView title_intro=view.findViewById(R.id.title_intro);
+                    title_intro.setText(titleIntro);
+
                     JSONArray data= json.optJSONArray("stream");
                     JSONObject cyber=data.optJSONObject(0);
                     String title="Cyber Security";
@@ -102,25 +106,52 @@ public class CurriculumFragment extends Fragment {
 
                     TextView card1_title=view.findViewById(R.id.card1_title);
                     card1_title.setText(title);
-
                     TextView card1_intro=view.findViewById(R.id.card1_intro);
                     card1_intro.setText(intro);
 
                     JSONObject multimedia = data.optJSONObject(1);
-                    String title1 = "Multimedia Computing";
-                    String imageUrl1 = multimedia.optString("imageUrl");
-                    String intro1 = multimedia.optString("Multimedia Computing");
+                    String title2 = "Multimedia Computing";
+                    String imageUrl2 = multimedia.optString("imageUrl");
+                    String intro2 = multimedia.optString("Multimedia Computing");
 
                     CardView cardView2 = view.findViewById(R.id.card2);
                     cardView2.setVisibility(View.VISIBLE);
                     ImageView imageView2 = view.findViewById(R.id.card2_img);
-                    Glide.with(this).load(imageUrl1).into(imageView2);
+                    Glide.with(this).load(imageUrl2).into(imageView2);
 
                     TextView card2_title=view.findViewById(R.id.card2_title);
-                    card2_title.setText(title1);
-
+                    card2_title.setText(title2);
                     TextView card2_intro=view.findViewById(R.id.card2_intro);
-                    card2_intro.setText(intro1);
+                    card2_intro.setText(intro2);
+
+                    JSONObject financial = data.optJSONObject(2);
+                    String title3="Financial Computing";
+                    String imageUrl3=financial.optString("imageUrl");
+                    String intro3=financial.optString("Financial Computing");
+                    CardView cardView3=view.findViewById(R.id.card3);
+                    cardView3.setVisibility(View.VISIBLE);
+                    ImageView imageView3=view.findViewById(R.id.card3_img);
+                    Glide.with(this).load(imageUrl3).into(imageView3);
+                    TextView card3_title=view.findViewById(R.id.card3_title);
+                    card3_title.setText(title3);
+                    TextView card3_intro=view.findViewById(R.id.card3_intro);
+                    card3_intro.setText(intro3);
+
+                    JSONObject general = data.optJSONObject(3);
+                    String title4="General Stream";
+                    String imageUrl4=general.optString("imageUrl");
+                    String intro4=general.optString("General Stream");
+                    CardView cardView4=view.findViewById(R.id.card4);
+                    cardView4.setVisibility(View.VISIBLE);
+                    ImageView imageView4=view.findViewById(R.id.card4_img);
+                    Glide.with(this).load(imageUrl4).into(imageView4);
+                    TextView card4_title=view.findViewById(R.id.card4_title);
+                    card4_title.setText(title4);
+                    TextView card4_intro=view.findViewById(R.id.card4_intro);
+                    card4_intro.setText(intro4);
+
+
+
 
                 }else if(json.optString("title").equals("")){
 
