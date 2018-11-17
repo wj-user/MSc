@@ -164,7 +164,19 @@ public class TestFragment extends Fragment {
                     }
                 }
                 else if(json.optString("type").equals("Information Sessions")){
+                    JSONObject part1=json.optJSONObject("part1");
+                    TextView title1=view.findViewById(R.id.title1);
+                    title1.setText(part1.optString("title"));
+                    title1.setVisibility(View.VISIBLE);
 
+                    TextView title1_intro=view.findViewById(R.id.title1_intro);
+                    title1_intro.setText(part1.optString("title"));
+                    title1_intro.setVisibility(View.VISIBLE);
+
+                    JSONObject part2=json.optJSONObject("part2");
+                    TextView title2=view.findViewById(R.id.title2);
+                    title2.setText(part2.optString("title"));
+                    title2.setVisibility(View.VISIBLE);
                 }
 
             } catch (JSONException e) {

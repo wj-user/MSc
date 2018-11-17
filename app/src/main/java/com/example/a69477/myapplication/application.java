@@ -181,9 +181,36 @@ public class application extends AppCompatActivity {
             list.add(TestFragment.newInstance("Whops, something is wrong!"));
         }
 
+
         list.add(TestFragment.newInstance("大学"));
         list.add(TestFragment.newInstance("很难"));
-        list.add(TestFragment.newInstance("呵呵"));
+
+        JSONObject json3=new JSONObject();
+        try{
+            json3.put("title","Information Sessions");
+            json3.put("type","Information Sessions");
+
+            JSONObject part1=new JSONObject();
+            part1.put("title","Join us at the information sessions, and find out if the Master of Science in Computer Science Programme is the right fit for your career goals. Information Sessions include a programme overview and Q&A, plus the opportunity to talk informally with Programme Director and staff. Potential applicants are welcome.");
+            part1.put("intro","Information sessions will be organized in Hong Kong and Mainland China. Details of these information sessions will be announced on our website and/or advertised online and in major local newspapers.");
+            json3.put("part1",part1);
+
+            JSONObject part2= new JSONObject();
+            part2.put("title","Details of the information session:");
+            part2.put("Date","04 December 2018 (Tuesday)");
+            part2.put("Time","6:30-8:00pm\n" +
+                    "MSc(CompSc) and MSc(ECom&IComp) Information Session");
+            part2.put("Venue","Theatre A, G/F\n" +
+                    "Chow Yei Ching Building\n" +
+                    "The University of Hong Kong, Pokfulam Road");
+            part2.put("register","https://www.msc-cs.hku.hk/frmreginformationsession1");
+            json3.put("part2",part2);
+            list.add(TestFragment.newInstance(json3));
+        }
+        catch (JSONException e){
+            list.add(TestFragment.newInstance("Whops, something is wrong!"));
+        }
+
         viewPagerAdapter.setList(list);
 
 
