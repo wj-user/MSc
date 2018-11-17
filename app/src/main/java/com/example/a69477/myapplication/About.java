@@ -342,7 +342,20 @@ public class About extends AppCompatActivity {
             list.add(AboutFragment.newInstance("Whops, something is wrong!"));
         }
 
-        list.add(TestFragment.newInstance("大学"));
+        JSONObject aboutHKU=new JSONObject();
+        try {
+            aboutHKU.put("title","The University of Hong Kong");
+            aboutHKU.put("imageUrl","https://www.msc-cs.hku.hk/Media/Default/ContentImages/WhyHKU.jpg");
+            aboutHKU.put("content","    The University of Hong Kong (HKU), founded in 1911, is the oldest of Hong Kong’s institutions of higher learning.  It was also the alma mater of Dr. Sun Yat-sen, the founder of modern China.\n" +
+                    "\n\n" +
+                    "    HKU, as a pre-eminent international university, seeks to sustain and enhance its excellence as an institution of higher learning through outstanding teaching and world-class research so as to produce well-rounded graduates with lifelong abilities to provide leadership within the societies they serve.\n" +
+                    "\n\n" +
+                    "    HKU has ten faculties, a graduate school and a number of independent centres of studies and learning. In 2016-17, it had a student population of over 27,800, including over 16,100 undergraduates and 11,700 postgraduates, and an academic staff population of around 3,400. Coupled with an active alumni network and generous endowments for programme research and development, HKU is a dynamic and exciting institution. Stepping into Asia’s next century of phenomenal growth.");
+            list.add(AboutFragment.newInstance(aboutHKU));
+        }
+        catch (JSONException e) {
+            list.add(AboutFragment.newInstance("Whops, something is wrong!"));
+        }
         viewPagerAdapter.setList(list);
 
 
