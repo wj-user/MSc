@@ -3,11 +3,17 @@ package com.example.a69477.myapplication;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class AboutFragment extends Fragment {
@@ -74,7 +80,45 @@ public class AboutFragment extends Fragment {
         Bundle bundle= getArguments();
         JSONObject json=new JSONObject();
         title=view.findViewById(R.id.title);
+        ImageView imageView = view.findViewById(R.id.about_header);
+        Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/mfpd-L.jpg").into(imageView);
         if(bundle.getString("JSON_STRING")!=null) {
+            try {
+                String json_string = bundle.getString("JSON_STRING");
+                json = new JSONObject(json_string);
+                title.setText(json.get("title").toString());
+                title.setVisibility(View.VISIBLE);
+                if (json.optString("title").equals("MESSAGE FROM PROGRAM DIRECTOR")){
+                    JSONObject part1 = json.optJSONObject("part1");
+                    TextView title1 = view.findViewById(R.id.title);
+                    title1.setText(part1.optString("title"));
+
+                    CardView mycard1 = view.findViewById(R.id.about_card1);
+                    mycard1.setVisibility(View.VISIBLE);
+
+                    JSONArray data1 = part1.optJSONArray("data");
+                    TextView part1_1 = view.findViewById(R.id.about_card1_text1);
+                    part1_1.setText(data1.optString(0));
+
+                    TextView part1_2 = view.findViewById(R.id.about_card1_text2);
+                    part1_2.setText(data1.optString(1) + "\n");
+
+                    TextView part1_3 = view.findViewById(R.id.about_card1_text3);
+                    part1_3.setText(data1.optString(2) + "\n");
+
+                    String seq3 = data1.optString(3) + "\n" + "\n";
+                    TextView part1_4 = view.findViewById(R.id.about_card1_text4);
+                    part1_4.setText(seq3);
+
+                    TextView part1_5 = view.findViewById(R.id.about_card1_text5);
+                    part1_5.setText(data1.optString(4) );
+
+                    ImageView mycard1_img = view.findViewById(R.id.about_card1_img);
+                    Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/instructors/ChowKP-Square250.jpg").into(mycard1_img);
+                }
+            } catch (JSONException e) {
+                title.setText("Whops,something is wrong");
+            }
 
         }
         else {
