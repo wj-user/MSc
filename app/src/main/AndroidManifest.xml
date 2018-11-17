@@ -34,7 +34,7 @@
             android:label="Student Resource " />
         <activity android:name=".ProSchedule" />
         <activity android:name=".CompositionFees"></activity>
-
+        <activity android:name=".Alumni"></activity>
     </application>
 
 </manifest>
