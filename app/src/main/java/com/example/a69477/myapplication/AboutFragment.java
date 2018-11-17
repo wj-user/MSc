@@ -151,7 +151,13 @@ public class AboutFragment extends Fragment {
                         TextView teacher_study_content=view.findViewById(study_contentId);
                         teacher_study_content.setText(study_content);
                     }
-
+                }
+                else {
+                    Glide.with(this).load(json.optString("imageUrl")).into(imageView);
+                    String data = json.optString("content");
+                    TextView content=view.findViewById(R.id.content);
+                    content.setText(data);
+                    content.setVisibility(View.VISIBLE);
                 }
             } catch (JSONException e) {
                 title.setText("Whops,something is wrong");
