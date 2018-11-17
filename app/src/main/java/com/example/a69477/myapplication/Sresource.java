@@ -67,10 +67,10 @@ public class Sresource extends AppCompatActivity {
         viewPager.setAdapter(viewPagerAdapter);
         List<Fragment> list = new ArrayList<>();
 
-        list.add(TestFragment.newInstance("About第一页"));
-        list.add(TestFragment.newInstance("第二页"));
-        list.add(TestFragment.newInstance("大学"));
-        list.add(TestFragment.newInstance("很难"));
+        list.add(SresourceFragment.newInstance("About第一页"));
+        list.add(SresourceFragment.newInstance("第二页"));
+        list.add(SresourceFragment.newInstance("大学"));
+        list.add(SresourceFragment.newInstance("很难"));
         viewPagerAdapter.setList(list);
 
 
