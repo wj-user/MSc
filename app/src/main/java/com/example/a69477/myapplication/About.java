@@ -71,6 +71,7 @@ public class About extends AppCompatActivity {
         viewPager.setAdapter(viewPagerAdapter);
         List<Fragment> list = new ArrayList<>();
         JSONObject faculty=new JSONObject();
+
         try{
             faculty.put("title","The Department of Computer Science is committed to high-quality education and training of computing professionals at both the undergraduate and postgraduate levels. At the postgraduate level, we offer two taught programmes based on coursework, the MSc(CompSc) and the MSc(ECom&IComp), as well as the research-based MPhil and PhD programmes.\n" +
                     "\n" +
@@ -319,7 +320,7 @@ public class About extends AppCompatActivity {
             list.add(AboutFragment.newInstance("Whops, something is wrong!"));
         }
 
-
+           // list.add(AboutFragment.newInstance("Whops, something is wrong!"));
 
         JSONObject json1 = new JSONObject();
         try {

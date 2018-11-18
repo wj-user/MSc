@@ -30,6 +30,7 @@ public class AdvertiseViewpagerAdapter extends PagerAdapter{
         container.addView(imageView); // 添加到ViewPager容器
         return imageView;// 返回填充的View对象
     }
+
     // 销毁条目对象
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {

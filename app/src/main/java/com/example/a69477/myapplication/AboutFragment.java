@@ -106,7 +106,7 @@ public class AboutFragment extends Fragment {
                     TextView part1_3 = view.findViewById(R.id.about_card1_text3);
                     part1_3.setText(data1.optString(2) + "\n");
 
-                    String seq3 = data1.optString(3) + "\n" + "\n";
+                    String seq3 = data1.optString(3);//+ "\n" + "\n";
                     TextView part1_4 = view.findViewById(R.id.about_card1_text4);
                     part1_4.setText(seq3);
 
