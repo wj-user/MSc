@@ -151,13 +151,53 @@ public class Curriculum extends AppCompatActivity {
             list.add(CurriculumFragment.newInstance("Whops, something is wrong!"));
         }
 
-        JSONObject json2=new JSONObject();
+        JSONObject courses=new JSONObject();
         try{
-            json2.put("title","Courses");
+            courses.put("title","MSc(CompSc) Courses");
+            courses.put("prologue","The following is a list of courses offered for the MSc(CompSc) curriculum by the Department of Computer Science.  The courses, both in terms of range and syllabus, are updated and revised continuously by the Programme Committee and the Department.  Any revision requires University’s approval.  The list of courses is also subject to change because occasionally we may decide not to offer a particular course in one year or to add some new ones, based on the findings of the annual curriculum review.  Please refer to our website for updated information.");
+            courses.put("stream","Stream/Subject Group");
+            courses.put("course_list","Course List (each course carries 6 credits)#");
+
+            JSONArray data1 = new JSONArray();
+            data1.put("Cyber Security");
+
+            JSONObject course1 = new JSONObject();
+            course1.put("number","COMP7806");
+            course1.put("course_name","Topic in information security");
+            data1.put(course1);
+
+            JSONObject course2 = new JSONObject();
+            course2.put("number","COMP7901");
+            course2.put("course_name","Legal protection of digital property #");
+            data1.put(course2);
+
+            JSONObject course3 = new JSONObject();
+            course3.put("number","COMP7903");
+            course3.put("course_name","Digital investigation and forensics");
+            data1.put(course3);
+
+            JSONObject course4 = new JSONObject();
+            course4.put("number","COMP7904");
+            course4.put("course_name","Information security: attacks and defense");
+            data1.put(course4);
+
+            JSONObject course5 = new JSONObject();
+            course5.put("number","COMP7905");
+            course5.put("course_name","Reverse engineering and malware analysis");
+            data1.put(course5);
+
+            JSONObject course6 = new JSONObject();
+            course5.put("number","COMP7906");
+            course5.put("course_name","Introduction to cyber security #");
+            data1.put(course5);
+
+            courses.put("data1",data1);
+
+            list.add(CurriculumFragment.newInstance(courses));
 
         }
         catch (JSONException e){
-
+            list.add(CurriculumFragment.newInstance("Whops, something is wrong!"));
         }
 
         JSONObject json3 = new JSONObject();
