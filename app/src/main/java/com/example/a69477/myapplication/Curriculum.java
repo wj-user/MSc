@@ -187,12 +187,200 @@ public class Curriculum extends AppCompatActivity {
             data1.put(course5);
 
             JSONObject course6 = new JSONObject();
-            course5.put("number","COMP7906");
-            course5.put("course_name","Introduction to cyber security #");
-            data1.put(course5);
+            course6.put("number","COMP7906");
+            course6.put("course_name","Introduction to cyber security #");
+            data1.put(course6);
 
             courses.put("data1",data1);
 
+            JSONArray data2 = new JSONArray();
+            data2.put("Financial Computing");
+
+            JSONObject course7 = new JSONObject();
+            course7.put("number","COMP7103");
+            course7.put("course_name","Data Mining");
+            data2.put(course7);
+
+            JSONObject course8 = new JSONObject();
+            course8.put("number","COMP7405");
+            course8.put("course_name","Techniques in computational finance");
+            data2.put(course8);
+
+            JSONObject course9 = new JSONObject();
+            course9.put("number","COMP7406");
+            course9.put("course_name","Software development for quantitative finance");
+            data2.put(course9);
+
+            JSONObject course10 = new JSONObject();
+            course10.put("number","COMP7407");
+            course10.put("course_name","Securities transaction banking");
+            data2.put(course10);
+
+            JSONObject course11 = new JSONObject();
+            course11.put("number","COMP7408");
+            course11.put("course_name","Distributed ledger and blockchain technology #");
+            data2.put(course11);
+
+            JSONObject course12 = new JSONObject();
+            course12.put("number","COMP7802");
+            course12.put("course_name","Introduction to financial computing");
+            data2.put(course12);
+
+            JSONObject course13 = new JSONObject();
+            course13.put("number","COMP7808");
+            course13.put("course_name","Topic in financial computing");
+            data2.put(course13);
+
+            JSONObject course14 = new JSONObject();
+            course14.put("number","COMP7906");
+            course14.put("course_name","Introduction to cyber security #");
+            data2.put(course14);
+
+            courses.put("data2",data2);
+
+            JSONArray data3 = new JSONArray();
+            data3.put("Multimedia Computing");
+
+            JSONObject course15 = new JSONObject();
+            course15.put("number","COMP7502");
+            course15.put("course_name","Image processing and computer vision");
+            data3.put(course15);
+
+            JSONObject course16 = new JSONObject();
+            course16.put("number","COMP7503");
+            course16.put("course_name","Multimedia technologies");
+            data3.put(course16);
+
+            JSONObject course17 = new JSONObject();
+            course17.put("number","COMP7504");
+            course17.put("course_name","Pattern recognition and applications");
+            data3.put(course17);
+
+            JSONObject course18 = new JSONObject();
+            course18.put("number","COMP7505");
+            course18.put("course_name","User interface design and development");
+            data3.put(course18);
+
+            JSONObject course19 = new JSONObject();
+            course19.put("number","COMP7506");
+            course19.put("course_name","Smart phone apps development #");
+            data3.put(course19);
+
+            JSONObject course20 = new JSONObject();
+            course20.put("number","COMP7507");
+            course20.put("course_name","Visualization and visual analytics");
+            data3.put(course20);
+
+            JSONObject course21 = new JSONObject();
+            course21.put("number","COMP7604");
+            course21.put("course_name","Game design and development");
+            data3.put(course21);
+
+            JSONObject course22 = new JSONObject();
+            course22.put("number","COMP7807");
+            course22.put("course_name","Topic in multimedia computing");
+            data3.put(course22);
+
+            courses.put("data3",data3);
+
+            JSONArray data4 = new JSONArray();
+            data4.put("Other Courses");
+
+            JSONObject course23 = new JSONObject();
+            course23.put("number","COMP7104");
+            course23.put("course_name","Advanced database systems #");
+            data4.put(course23);
+
+            JSONObject course24 = new JSONObject();
+            course24.put("number","COMP7201");
+            course24.put("course_name","Analysis and design of enterprise applications in UML");
+            data4.put(course24);
+
+            JSONObject course25 = new JSONObject();
+            course25.put("number","COMP7203");
+            course25.put("course_name","Modern software design");
+            data4.put(course25);
+
+            JSONObject course26 = new JSONObject();
+            course26.put("number","COMP7205");
+            course26.put("course_name","Enterprise architecture");
+            data4.put(course26);
+
+            JSONObject course27 = new JSONObject();
+            course27.put("number","COMP7303");
+            course27.put("course_name","High-performance computing");
+            data4.put(course27);
+
+            JSONObject course28 = new JSONObject();
+            course28.put("number","COMP7304");
+            course28.put("course_name","The wireless Internet and mobile network");
+            data4.put(course28);
+
+            JSONObject course29 = new JSONObject();
+            course29.put("number","COMP7305");
+            course29.put("course_name","Cluster and cloud computing");
+            data4.put(course29);
+
+            JSONObject course30 = new JSONObject();
+            course30.put("number","COMP7306");
+            course30.put("course_name","Web technologies");
+            data4.put(course30);
+
+            JSONObject course31 = new JSONObject();
+            course31.put("number","COMP7307");
+            course31.put("course_name","Advanced real-time embedded systems and applications");
+            data4.put(course31);
+
+            JSONObject course32 = new JSONObject();
+            course32.put("number","COMP7403");
+            course32.put("course_name","Computational molecular biology");
+            data4.put(course32);
+
+            JSONObject course33 = new JSONObject();
+            course33.put("number","COMP7404");
+            course33.put("course_name","Computational intelligence and machine learning");
+            data4.put(course33);
+
+            JSONObject course34 = new JSONObject();
+            course34.put("number","COMP7606");
+            course34.put("course_name","Deep learning #");
+            data4.put(course34);
+
+            JSONObject course35 = new JSONObject();
+            course35.put("number","COMP7801");
+            course35.put("course_name","Topic in computer science");
+            data4.put(course35);
+
+            JSONObject course36 = new JSONObject();
+            course36.put("number","COMP7805");
+            course36.put("course_name","Topic in computer network and systems");
+            data4.put(course36);
+
+            courses.put("data4",data4);
+
+            JSONArray data5 = new JSONArray();
+            data5.put("Capstone Experience");
+
+            JSONObject course37 = new JSONObject();
+            course37.put("number","COMP7704");
+            course37.put("course_name","Dissertation (24 credits)");
+            data5.put(course37);
+
+            JSONObject course38 = new JSONObject();
+            course38.put("number","COMP7705");
+            course38.put("course_name","Project (12 credits)");
+            data5.put(course38);
+
+            courses.put("data5",data5);
+
+            courses.put("comment1","^ Students with focussed streams of study have to take at least 24 credits courses (equivalent to four 6-credit courses) in the corresponding subject group.");
+            courses.put("comment2","# Subject to University's approval");
+
+            JSONObject data6 = new JSONObject();
+            data6.put("title","MSc(ECom&IComp) Courses");
+            data6.put("intro","The courses in the MSc in Electronic Commerce and Internet Computing programme, which is also offered by the Department of Computer Science, are suitable for students with working experience focusing on the business exploitation of technologies rather than just studying the technologies alone.  Details of courses from MSc(ECom&IComp) can be found in this website: https://www.ecom-icom.hku.hk.");
+            data6.put("comment","Students may select no more than 12 credits of courses (equivalent to two 6-credit courses) from the syllabuses for the MSc(ECom&IComp) curriculum, subject to the approval of the Head of the Department of Computer Science.");
+            courses.put("data6",data6);
             list.add(CurriculumFragment.newInstance(courses));
 
         }

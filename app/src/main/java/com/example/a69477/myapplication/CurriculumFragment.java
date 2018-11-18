@@ -1,5 +1,6 @@
 package com.example.a69477.myapplication;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -181,7 +182,139 @@ public class CurriculumFragment extends Fragment {
                     part4_1.setText(part4.optJSONArray("data").optString(0));
                     part4_1.setVisibility(View.VISIBLE);
 
-                }else if(json.optString("title").equals("Duration of Study")){
+                } else if (json.optString("title").equals("MSc(CompSc) Courses")){
+                        Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/Curriculum.jpg").into(curri_header);
+                        TextView title1 = view.findViewById(R.id.title);
+                        title1.setText(json.optString("title"));
+
+                        TextView intro = view.findViewById(R.id.title_intro);
+                        intro.setText(json.optString("prologue"));
+                        intro.setVisibility(View.VISIBLE);
+
+                        CardView stream1 = view.findViewById(R.id.card_stream1);
+                        stream1.setVisibility(View.VISIBLE);
+                        JSONArray data1 = json.optJSONArray("data1");
+                        for (int i = 1; i < data1.length(); ++i){
+                            JSONObject course = data1.optJSONObject(i);
+                            String course_num = course.optString("number");
+                            String course_name =course.optString("course_name");
+
+                            String course_num_name = "card_stream1_num" + i;
+                            int course_NumId=getResources().getIdentifier(course_num_name,"id","com.example.a69477.myapplication");
+                            TextView my_course_num=view.findViewById(course_NumId);
+                            my_course_num.setText(course_num);
+
+                            String course_name_name = "card_stream1_name" + i;
+                            int course_NameId=getResources().getIdentifier(course_name_name,"id","com.example.a69477.myapplication");
+                            TextView my_course_name=view.findViewById(course_NameId);
+                            my_course_name.setText(course_name);
+                        }
+
+                        CardView stream2 = view.findViewById(R.id.card_stream2);
+                        stream2.setVisibility(View.VISIBLE);
+                        JSONArray data2 = json.optJSONArray("data2");
+                        for (int i = 1; i < data2.length(); ++i){
+                            JSONObject course = data2.optJSONObject(i);
+                            String course_num = course.optString("number");
+                            String course_name =course.optString("course_name");
+
+                            String course_num_name = "card_stream2_num" + i;
+                            int course_NumId=getResources().getIdentifier(course_num_name,"id","com.example.a69477.myapplication");
+                            TextView my_course_num=view.findViewById(course_NumId);
+                            my_course_num.setText(course_num);
+
+                            String course_name_name = "card_stream2_name" + i;
+                            int course_NameId=getResources().getIdentifier(course_name_name,"id","com.example.a69477.myapplication");
+                            TextView my_course_name=view.findViewById(course_NameId);
+                            my_course_name.setText(course_name);
+                        }
+
+                        CardView stream3 = view.findViewById(R.id.card_stream3);
+                        stream3.setVisibility(View.VISIBLE);
+                        JSONArray data3 = json.optJSONArray("data3");
+                        for (int i = 1; i < data3.length(); ++i){
+                            JSONObject course = data3.optJSONObject(i);
+                            String course_num = course.optString("number");
+                            String course_name =course.optString("course_name");
+
+                            String course_num_name = "card_stream3_num" + i;
+                            int course_NumId=getResources().getIdentifier(course_num_name,"id","com.example.a69477.myapplication");
+                            TextView my_course_num=view.findViewById(course_NumId);
+                            my_course_num.setText(course_num);
+
+                            String course_name_name = "card_stream3_name" + i;
+                            int course_NameId=getResources().getIdentifier(course_name_name,"id","com.example.a69477.myapplication");
+                            TextView my_course_name=view.findViewById(course_NameId);
+                            my_course_name.setText(course_name);
+                        }
+
+                        CardView stream4 = view.findViewById(R.id.card_stream4);
+                        stream4.setVisibility(View.VISIBLE);
+                        JSONArray data4 = json.optJSONArray("data4");
+                        for (int i = 1; i < data4.length(); ++i){
+                            JSONObject course = data4.optJSONObject(i);
+                            String course_num = course.optString("number");
+                            String course_name =course.optString("course_name");
+
+                            String course_num_name = "card_stream4_num" + i;
+                            int course_NumId=getResources().getIdentifier(course_num_name,"id","com.example.a69477.myapplication");
+                            TextView my_course_num=view.findViewById(course_NumId);
+                            my_course_num.setText(course_num);
+
+                            String course_name_name = "card_stream4_name" + i;
+                            int course_NameId=getResources().getIdentifier(course_name_name,"id","com.example.a69477.myapplication");
+                            TextView my_course_name=view.findViewById(course_NameId);
+                            my_course_name.setText(course_name);
+                        }
+
+                        CardView stream5 = view.findViewById(R.id.card_stream5);
+                        stream5.setVisibility(View.VISIBLE);
+                        JSONArray data5 = json.optJSONArray("data5");
+
+                        for (int i = 1; i < data5.length(); ++i){
+                            JSONObject course = data5.optJSONObject(i);
+                            String course_num = course.optString("number");
+                            String course_name =course.optString("course_name");
+
+                            String course_num_name = "card_stream5_num" + i;
+                            int course_NumId=getResources().getIdentifier(course_num_name,"id","com.example.a69477.myapplication");
+                            TextView my_course_num=view.findViewById(course_NumId);
+                            my_course_num.setText(course_num);
+
+                            String course_name_name = "card_stream5_name" + i;
+                            int course_NameId=getResources().getIdentifier(course_name_name,"id","com.example.a69477.myapplication");
+                            TextView my_course_name=view.findViewById(course_NameId);
+                            my_course_name.setText(course_name);
+                        }
+
+                        TextView comment1 = view.findViewById(R.id.comment1);
+                        String firstComment = json.optString("comment1") + "\n";
+                        comment1.setText(firstComment);
+                        comment1.setVisibility(View.VISIBLE);
+
+                        TextView comment2 = view.findViewById(R.id.comment2);
+                        String secondComment = json.optString("comment2") + "\n";
+                        comment2.setText(secondComment);
+                        comment2.setVisibility(View.VISIBLE);
+
+                        JSONObject data6 = json.optJSONObject("data6");
+                        String title2 = data6.optString("title");
+                        TextView my_title2 = view.findViewById(R.id.title2);
+                        my_title2.setText(title2);
+                        my_title2.setVisibility(View.VISIBLE);
+
+                        TextView my_intro2 = view.findViewById(R.id.title2_intro);
+                        String title_intro2 = data6.optString("intro");
+                        my_intro2.setText(title_intro2);
+                        my_intro2.setVisibility(View.VISIBLE);
+
+                        String comment3 = data6.optString("comment");
+                        TextView my_comment = view.findViewById(R.id.comment3);
+                        my_comment.setText(comment3);
+                        my_comment.setVisibility(View.VISIBLE);
+
+
+                } else if(json.optString("title").equals("Duration of Study")){
                         Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/Schedule.jpg").into(curri_header);
                         JSONObject part1 = json.optJSONObject("part1");
                         TextView title1 = view.findViewById(R.id.title);

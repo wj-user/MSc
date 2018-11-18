@@ -18,8 +18,7 @@
         android:text="curriculum"
         android:textSize="20dp"
         android:textColor="#000000"
-        android:textStyle="bold"
-        android:visibility="visible" />
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/title_intro"
         android:layout_width="wrap_content"
@@ -34,6 +33,8 @@
         android:textSize="15dp"
         android:textColorLink="@color/colorPrimary"
         android:visibility="gone" />
+
+
 
     <!-- program overview card-->
     <android.support.v7.widget.CardView
@@ -301,10 +302,11 @@
 
         <TextView
             android:id="@+id/card_stream1_name1"
-            android:layout_width="176dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="2dp"
             android:layout_marginLeft="186dp"
+            android:layout_marginRight="2dp"
             android:paddingTop="3dp"
             android:paddingLeft="9dp"
             android:text=""
@@ -314,10 +316,11 @@
 
         <TextView
             android:id="@+id/card_stream1_name2"
-            android:layout_width="176dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="34dp"
             android:layout_marginLeft="186dp"
+            android:layout_marginRight="2dp"
             android:paddingTop="3dp"
             android:paddingLeft="9dp"
             android:text=""
@@ -327,10 +330,11 @@
 
         <TextView
             android:id="@+id/card_stream1_name3"
-            android:layout_width="176dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="66dp"
             android:layout_marginLeft="186dp"
+            android:layout_marginRight="2dp"
             android:paddingTop="3dp"
             android:paddingLeft="9dp"
             android:text=""
@@ -340,10 +344,11 @@
 
         <TextView
             android:id="@+id/card_stream1_name4"
-            android:layout_width="176dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="98dp"
             android:layout_marginLeft="186dp"
+            android:layout_marginRight="2dp"
             android:paddingTop="3dp"
             android:paddingLeft="9dp"
             android:text=""
@@ -353,10 +358,11 @@
 
         <TextView
             android:id="@+id/card_stream1_name5"
-            android:layout_width="176dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="130dp"
             android:layout_marginLeft="186dp"
+            android:layout_marginRight="2dp"
             android:paddingTop="3dp"
             android:paddingLeft="9dp"
             android:text=""
@@ -366,10 +372,11 @@
 
         <TextView
             android:id="@+id/card_stream1_name6"
-            android:layout_width="176dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="162dp"
             android:layout_marginLeft="186dp"
+            android:layout_marginRight="2dp"
             android:paddingTop="3dp"
             android:paddingLeft="9dp"
             android:text=""
@@ -378,7 +385,993 @@
             android:textColor="#000000"/>
     </android.support.v7.widget.CardView>
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_stream2"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/card_stream2_title"
+            android:layout_width="100dp"
+            android:layout_height="254dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="100dp"
+            android:text="Financial Computing"
+            android:textColor="#000000"
+            android:background="#00B0FF"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/card_stream2_num1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_num2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_num3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_num4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_num5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_num6"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_num7"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="194dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_num8"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="226dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_name1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_name2"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_name3"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_name4"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_name5"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_name6"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_name7"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="194dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream2_name8"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="226dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#84FFFF"
+            android:textColor="#000000"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_stream3"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/card_stream3_title"
+            android:layout_width="100dp"
+            android:layout_height="254dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="100dp"
+            android:text="Multimedia Computing"
+            android:textColor="#000000"
+            android:background="#FFFF00"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/card_stream3_num1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_num2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_num3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_num4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_num5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_num6"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_num7"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="194dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_num8"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="226dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_name1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_name2"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_name3"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_name4"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_name5"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_name6"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_name7"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="194dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream3_name8"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="226dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#FFFF8D"
+            android:textColor="#000000"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_stream4"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/card_stream4_title"
+            android:layout_width="100dp"
+            android:layout_height="446dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="200dp"
+            android:text="Other Courses"
+            android:textColor="#000000"
+            android:background="#BDBDBD"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num6"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num7"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="194dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num8"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="226dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num9"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="258dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num10"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num11"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="322dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num12"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="354dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num13"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="386dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_num14"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="418dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name2"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name3"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name4"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name5"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name6"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name7"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="194dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name8"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="226dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name9"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="258dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name10"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name11"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="322dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name12"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="354dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name13"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="386dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream4_name14"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="418dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_stream5"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/card_stream5_title"
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="Capstone Experience"
+            android:textColor="#000000"
+            android:background="#FB8C00"
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/card_stream5_num1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#FFCC80"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream5_num2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#D1C4E9"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream5_name1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#FFCC80"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream5_name2"
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#D1C4E9"
+            android:textColor="#000000"/>
+
+    </android.support.v7.widget.CardView>
     <!--course card-->
+
+    <TextView
+        android:id="@+id/comment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/comment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:visibility="gone"/>
     <TextView
         android:id="@+id/title2"
         android:layout_width="wrap_content"
@@ -400,8 +1393,21 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:text=""
+        android:autoLink="web"
+        android:textColorLink="@color/colorPrimary"
         android:textSize="15dp"
         android:textColor="#000000"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/comment3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="12dp"
+        android:textStyle="italic"
         android:visibility="gone"/>
 
     <TextView
