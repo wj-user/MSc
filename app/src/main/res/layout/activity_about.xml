@@ -36,11 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
-
-
-
         </LinearLayout>
-
     </android.support.v4.widget.NestedScrollView>
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigationView_about"
@@ -51,7 +47,7 @@
         app:itemBackground="@null"
         app:itemIconTint="#ffffff"
         app:itemTextColor="#ffffff"
-        app:menu="@menu/nav_curriculum"
+        app:menu="@menu/nav_about"
         app:layout_constraintBottom_toBottomOf="@+id/nestedScrollView_a"
         app:layout_constraintHorizontal_bias="0.0"
     app:layout_constraintLeft_toLeftOf="parent"
