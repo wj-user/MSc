@@ -27,7 +27,7 @@
             android:id="@+id/picture"
             android:layout_width="match_parent"
             android:layout_height="166dp"
-            android:visibility="visible" >
+            android:visibility="visible">
 
         </android.support.v4.view.ViewPager>
         <TextView
