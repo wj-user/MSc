@@ -199,19 +199,183 @@
     <!--course card-->
 
     <android.support.v7.widget.CardView
+        android:id="@+id/card_stream1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="194dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
-        
+        android:layout_marginRight="10dp"
+        android:visibility="gone">
+
         <TextView
+            android:id="@+id/card_stream1_title"
             android:layout_width="100dp"
-            android:layout_height="200dp"
-            android:paddingLeft="5dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="10dp"
             android:paddingTop="80dp"
             android:text="Cyber Security"
             android:textColor="#000000"
+            android:background="#EA80FC"
+            android:textStyle="bold"
             android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/card_stream1_num1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_num2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_num3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_num4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_num5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_num6"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginLeft="104dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="12dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_name1"
+            android:layout_width="176dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_name2"
+            android:layout_width="176dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_name3"
+            android:layout_width="176dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_name4"
+            android:layout_width="176dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="98dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_name5"
+            android:layout_width="176dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/card_stream1_name6"
+            android:layout_width="176dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginLeft="186dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="10dp"
+            android:background="#E1BEE7"
+            android:textColor="#000000"/>
     </android.support.v7.widget.CardView>
 
     <!--course card-->
