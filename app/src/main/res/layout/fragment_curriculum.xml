@@ -198,6 +198,21 @@
 
     <!--course card-->
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="80dp"
+            android:text="Cyber Security"
+            android:textColor="#000000"
+            android:textSize="12dp"/>
+    </android.support.v7.widget.CardView>
 
     <!--course card-->
     <TextView
