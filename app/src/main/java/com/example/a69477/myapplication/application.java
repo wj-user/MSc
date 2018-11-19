@@ -46,11 +46,11 @@ public class application extends AppCompatActivity {
 
         //menu=findViewById(R.id.bottomMenu);
         menu=bottomNavigationView.getMenu();
-        menu.getItem(0).setTitle("Admission Requirement");
-        menu.getItem(1).setTitle("Application Procedure");
-        menu.getItem(2).setTitle("Composition Fee");
-        menu.getItem(3).setTitle("Words from Students and Graduates");
-        menu.getItem(4).setTitle("Information sessions");
+        menu.getItem(0).setTitle("Requirement");
+        menu.getItem(1).setTitle("Procedure");
+        /*menu.getItem(2).setTitle("Composition Fee");
+        menu.getItem(3).setTitle("Words from Students and Graduates");*/
+        menu.getItem(2).setTitle("sessions");
         //menu.getItem(5).setTitle("FAQ");
 
         viewPager = (ViewPager) findViewById(R.id.vp);
@@ -185,8 +185,8 @@ public class application extends AppCompatActivity {
         }
 
 
-        list.add(TestFragment.newInstance("大学"));
-        list.add(TestFragment.newInstance("很难"));
+        /*list.add(TestFragment.newInstance("大学"));
+        list.add(TestFragment.newInstance("很难"));*/
 
         JSONObject json3=new JSONObject();
         try{
@@ -245,12 +245,12 @@ public class application extends AppCompatActivity {
                 case R.id.navigation_dashboard:
                     viewPager.setCurrentItem(1);
                     return true;
-                case R.id.navigation_notifications:
+                /*case R.id.navigation_notifications:
                     viewPager.setCurrentItem(2);
                     return true;
                 case R.id.navigation_person:
                     viewPager.setCurrentItem(3);
-                    return true;
+                    return true;*/
                 case R.id.navigation_is:
                     viewPager.setCurrentItem(4);
             }

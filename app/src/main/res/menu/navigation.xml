@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--admission-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/bottomMenu">
     <item
@@ -9,14 +10,14 @@
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_comment"
         android:title="2" />
-    <item
+    <!--<item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_comment"
         android:title="3" />
     <item
         android:id="@+id/navigation_person"
         android:icon="@drawable/ic_comment"
-        android:title="4" />
+        android:title="4" />-->
     <item
         android:id="@+id/navigation_is"
         android:icon="@drawable/ic_comment"

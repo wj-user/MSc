@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--用于curriculum界面的底端toolbar-->
+<!--用于about界面的底端toolbar-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/bottomMenu_curriculum">
     <item
