@@ -182,6 +182,8 @@ public class CurriculumFragment extends Fragment {
                     part4_1.setText(part4.optJSONArray("data").optString(0));
                     part4_1.setVisibility(View.VISIBLE);
 
+                    TextView blanck2 = view.findViewById(R.id.my_blanck2);
+                    blanck2.setVisibility(View.VISIBLE);
                 } else if (json.optString("title").equals("MSc(CompSc) Courses")){
                         Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/Curriculum.jpg").into(curri_header);
                         TextView title1 = view.findViewById(R.id.title);
@@ -313,6 +315,8 @@ public class CurriculumFragment extends Fragment {
                         my_comment.setText(comment3);
                         my_comment.setVisibility(View.VISIBLE);
 
+                        TextView blanck2 = view.findViewById(R.id.my_blanck2);
+                        blanck2.setVisibility(View.VISIBLE);
 
                 } else if(json.optString("title").equals("Duration of Study")){
                         Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/Schedule.jpg").into(curri_header);
@@ -334,6 +338,7 @@ public class CurriculumFragment extends Fragment {
                         String intro_info2 = data2.optString(0);
                         title2_intro.setVisibility(View.VISIBLE);
                         title2_intro.setText(intro_info2);
+
                 } else if (json.optString("title").equals("Regulations")){
                         Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/Regulation.jpg").into(curri_header);
                         JSONObject part1 = json.optJSONObject("part1");

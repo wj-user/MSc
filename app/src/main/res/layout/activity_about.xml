@@ -50,6 +50,7 @@
         app:menu="@menu/nav_about"
         app:layout_constraintBottom_toBottomOf="@+id/nestedScrollView_a"
         app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
 </android.support.constraint.ConstraintLayout>

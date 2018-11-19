@@ -1512,4 +1512,10 @@
         android:textColorLink="@color/colorPrimary"
         android:visibility="gone"
         />
+
+    <TextView
+        android:id="@+id/my_blanck2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"/>
 </LinearLayout>

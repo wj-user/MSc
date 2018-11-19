@@ -121,6 +121,8 @@ public class TestFragment extends Fragment {
 
                         }
                     }
+                    TextView blanck = view.findViewById(R.id.my_blanck);
+                    blanck.setVisibility(View.VISIBLE);
                 }
                 else if(json.optString("type").equals("Application Procedures")){
                     TextView title_intro= view.findViewById(R.id.title_intro);
@@ -167,6 +169,8 @@ public class TestFragment extends Fragment {
                         tempTextView.setText(part3.optString("addition"+i));
                         tempTextView.setVisibility(View.VISIBLE);
                     }
+                    TextView blanck = view.findViewById(R.id.my_blanck);
+                    blanck.setVisibility(View.VISIBLE);
                 }
                 else if(json.optString("type").equals("Information Sessions")){
                     Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/ContentImages/mfpd-L.jpg").into(myheader);
@@ -183,6 +187,8 @@ public class TestFragment extends Fragment {
                     TextView title2=view.findViewById(R.id.title2);
                     title2.setText(part2.optString("title"));
                     title2.setVisibility(View.VISIBLE);
+                    TextView blanck = view.findViewById(R.id.my_blanck);
+                    blanck.setVisibility(View.VISIBLE);
                 }
 
             } catch (JSONException e) {

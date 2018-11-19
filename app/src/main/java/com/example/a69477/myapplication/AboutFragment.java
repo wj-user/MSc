@@ -115,6 +115,9 @@ public class AboutFragment extends Fragment {
 
                     ImageView mycard1_img = view.findViewById(R.id.about_card1_img);
                     Glide.with(this).load("https://www.msc-cs.hku.hk/Media/Default/instructors/ChowKP-Square250.jpg").into(mycard1_img);
+
+                    TextView blanck3 = view.findViewById(R.id.my_blanck3);
+                    blanck3.setVisibility(View.VISIBLE);
                 }
                 else if(json.optString("type").equals("faculty")){
                     Glide.with(this).load(json.optString("imageUrl")).into(imageView);
@@ -151,6 +154,8 @@ public class AboutFragment extends Fragment {
                         TextView teacher_study_content=view.findViewById(study_contentId);
                         teacher_study_content.setText(study_content);
                     }
+                    TextView blanck3 = view.findViewById(R.id.my_blanck3);
+                    blanck3.setVisibility(View.VISIBLE);
                 }
                 else {
                     Glide.with(this).load(json.optString("imageUrl")).into(imageView);

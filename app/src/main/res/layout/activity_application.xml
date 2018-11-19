@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -34,31 +34,31 @@
                 app:navigationIcon="@drawable/ic_back"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+
             <com.example.a69477.myapplication.WrapContentHeightViewPager
                 android:id="@+id/vp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-
         </LinearLayout>
+
+
 
     </android.support.v4.widget.NestedScrollView>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_height="50dp"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
+        android:layout_alignEnd="@id/nestedScrollView"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
         app:itemBackground="@null"
         app:itemIconTint="#ffffff"
         app:itemTextColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="@+id/nestedScrollView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/navigation" />
-
-    </android.support.constraint.ConstraintLayout>
+        app:menu="@menu/navigation"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+    </RelativeLayout>
 
