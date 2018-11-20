@@ -1,6 +1,7 @@
 package com.example.a69477.myapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 
@@ -115,7 +116,7 @@ public class MainActivity extends AppCompatActivity  {
                     Intent intent = new Intent(MainActivity.this, Curriculum.class);
                     startActivityForResult(intent, 11);
                     overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
-                } else if (id == R.id.nav_Gratuate) {
+                } else if (id == R.id.nav_Graduate) {
                     Intent intent = new Intent(MainActivity.this, Alumni.class);
                     startActivityForResult(intent, 11);
                     overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
@@ -154,14 +155,20 @@ public class MainActivity extends AppCompatActivity  {
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 break;
             case R.id.backup:
-                Toast.makeText(this, "You clicked Phone Call", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "You clicked Phone Call", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:85239171828"));
+                startActivity(intent);
                 break;
             case R.id.mail_us:
-                Toast.makeText(this, "You clicked Mail us", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "You clicked Mail us", Toast.LENGTH_SHORT).show();
+                Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                emailIntent.setType("text/plain");
+                startActivity(emailIntent);
                 break;
-            case R.id.settings:
-                Toast.makeText(this, "You clicked Settings", Toast.LENGTH_SHORT).show();
-                break;
+            //case R.id.settings:
+                //Toast.makeText(this, "You clicked Settings", Toast.LENGTH_SHORT).show();
+                //break;
             default:
         }
         return true;

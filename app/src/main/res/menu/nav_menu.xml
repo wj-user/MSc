@@ -10,9 +10,9 @@
             android:icon="@drawable/curri"
             android:title="Curriculum" />
         <item
-            android:id="@+id/nav_Gratuate"
+            android:id="@+id/nav_Graduate"
             android:icon="@drawable/nav_friends"
-            android:title="Gratuate and Alumni" />
+            android:title="Graduate and Alumni" />
         <!--<item
             android:id="@+id/nav_News"
             android:icon="@drawable/event"
