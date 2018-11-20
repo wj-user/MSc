@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="HKU "
+            android:label="MSc "
             android:icon="@drawable/mylogo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
