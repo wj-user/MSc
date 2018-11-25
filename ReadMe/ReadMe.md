@@ -12,7 +12,7 @@ MSc(CompCs) Programme at HKU. It provides almost all the basic and nesessary inf
 * Main page
 
 
-![Main Page](Main Page.png)
+![Main Page](Main_Page.png)
 
 The Main Page consists of five parts:
 
@@ -25,7 +25,7 @@ The Main Page consists of five parts:
 	* About
 - The **phone button**, which can make phone call to the Msc(CS) Office (on the right and top of main page) 
 
-![phone](phone call.png)
+![phone](phone_call.png)
 
 - The **email button**, which can open meassge or email app in your mobile phone to send message to MSc(CS) Office (on the right and top of main page)
 
