@@ -7,6 +7,8 @@ Group: Yuming Chen, Xiaohui Qu, Jian Wei
 The HKU MSc(CS) is an Android Mobile App to promote the
 MSc(CompCs) Programme at HKU. It provides almost all the basic and nesessary information which is helpful to the candidates.
 
+The app is developed with Android API 28.
+
 ## Contents
 
 * Main page
